@@ -2,7 +2,7 @@
 name: sk-enter-phase
 description: 找到并进入 Current Phase，更新相关 Metadata 和 Context，将当前 Phase 拆分成具体的 Tasks 并上传。完成后立刻停止并退出。其他 Agent 会跟进并完成具体的任务。
 metadata:
-    version: 0.0.3
+    version: 0.0.5
 ---
 
 # Enter Phase
@@ -12,6 +12,14 @@ metadata:
 ```bash
 $ backstage-gitea agent --help
 ```
+
+**用户反馈检测**: 如果用户表达不满、愤怒或要求停止，立即停止执行并询问用户。
+
+**CRITICAL: 幂等性强制要求**
+
+Enter Phase 是幂等操作。多次执行不会产生重复 Tasks。
+
+**必须在 Step 5 之前完成 Step 4 的 LIST 检查**。违反此规则将导致严重的数据污染。
 
 ## Initialization
 
@@ -37,13 +45,48 @@ $ backstage-gitea agent GET /:appId/:planId/current-phase > .context/current-pha
 
 - Step 3: 在 Task 的 `Do` 步骤中，所有产出物写入 `.context/current-task.md` 对应章节。**不允许在 `.context/` 下新建文件**。如果任务涉及 Design 变更（包括但不限于：调研、盘点、思考类任务产生的跨 Phase 结论；对架构、方案、技术选型的调整），应在 `Do` 步骤中注明写入 `.context/current-plan.md` → `Design` 对应章节。
 
-- Step 4: 按照 `Output Example` 的格式输出到用户指定文件。
+- **Step 4 【强制前置检查 - MUST BE EXECUTED BEFORE STEP 5】**: 列出 Gitea 中已存在的 Tasks。
 
-- Step 5: 使用 `backstage-gitea` 工具将 `.context/current-phase.md` 的 `Tasks Breakdown` 章节创建到 Gitea 项目中。每个 Task 调用一次创建工具。
+```bash
+$ backstage-gitea plan LIST /:appId/:planId/:phaseId/tasks
+```
+
+**MUST** 对比 LIST 结果与 current-phase.md 中的 Tasks：
+
+| LIST 结果 | current-phase.md | 操作 |
+|-----------|------------------|------|
+| 名称匹配 | 存在相同任务 | ✅ 跳过创建，使用已有 taskId |
+| 不存在 | 存在新任务 | ⚠️ 准备创建（进入 Step 5） |
+| 存在但名称不匹配 | 不存在 | ❌ 孤儿 Task，报告给用户 |
+
+**FAIL-FAST 检查**：
+- 如果 LIST 命令失败 → 立即停止并退出
+- 如果未执行 LIST 检查 → **禁止进入 Step 5**
+- 如果发现重复创建 → 立即停止，报告错误
+
+**检查清单（必须在 Step 5 前完成）**：
+- [ ] 已执行 LIST 命令
+- [ ] 已记录现有 Tasks（taskId + 名称）
+- [ ] 已对比 current-phase.md
+- [ ] 已确定需要创建的新 Tasks
+- [ ] 已识别孤儿 Tasks
+
+- Step 5: 创建 Tasks（仅为 **不存在的 Tasks** 执行创建）
+
+**FAIL-FAST 验证**: 如果 Step 4 未执行，立即停止并退出。
+
+按照 `Output Example` 的格式输出到用户指定文件。
+
+使用 `backstage-gitea` 工具将 `.context/current-phase.md` 的 `Tasks Breakdown` 章节创建到 Gitea 项目中。**仅为 Step 4 确定的"不存在的新 Tasks"执行创建**。
 
 ```bash
 $ backstage-gitea plan POST /:appId/:planId/:phaseId/tasks --name "Task Name"
 ```
+
+**禁止操作**：
+- ❌ 禁止为已存在的 Task 执行 POST（会导致重复创建）
+- ❌ 禁止在未执行 LIST 检查的情况下执行 POST
+- ❌ 禁止批量创建（必须逐个检查后再创建）
 
 注意：不要在 Task 名称中包含 "Task" 前缀；taskId 应该由工具自动生成，你需要将这个 taskId 回填到原文档中。
 
