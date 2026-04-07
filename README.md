@@ -25,17 +25,22 @@ $ kilocode
 
 在 KiloCode Cli 交互界面中选中 `skills/yasal`，`Yasal` 会告知 Agent 基本的设定。
 
-接下来选中 `skills/codex-autoresearch`，Agent 会问你一些问题，继续对话，进一步明确进化方向。
+接下来 `Yasal` 会自动启动 `skills/codex-autoresearch`，Agent 会问你一些问题，继续对话，进一步明确进化方向。
 
 Agent 会提示你输入 go 开始进化。
 
 ### Step 3: 查看进化效果
 
-1. 根据约定，进化的过程会体现在 context/LOG.md
-2. 以及 `context/INTENT.md` 中指定的位置
+根据约定，进化的过程会输出在 `context/YASAL.md`。
 
 ## 参考资料
 
 1. [手把手教你安装 @kilocode/cli](https://mp.weixin.qq.com/s/ImjbmFthEO6FLtEnuKVXNQ)
 2. https://github.com/leo-lilinxiao/codex-autoresearch
 3. https://github.com/karpathy/autoresearch
+
+---
+
+# Gosh - 构史
+
+我们发现某些特定的语法或表达对 Agent 有更强的 Steering 效果。训练中我们持续总结这些规律，并将其运用到能力文档的编写中——把它理解为 Agent 的一种族群语言。

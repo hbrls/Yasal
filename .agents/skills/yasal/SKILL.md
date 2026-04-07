@@ -7,7 +7,7 @@ metadata:
 
 # Yasal Training Runbook - 能力训练手册
 
-## 核心概念：Yasal、AutoSearch、Target 三者关系
+## 核心概念：Yasal、AutoSearch、Gosh、Target 四者关系
 
 ### 什么是 Target？
 
@@ -34,10 +34,15 @@ Target 是本轮训练的目标能力，格式为：
 - 职责：准备 INTENT → 分析问题 → 提出改进方案 → 迭代优化
 - 由 `.agents/skills/codex-autoresearch` 实现
 
+**Gosh**：
+- 训练体系中的"语言层工具"
+- 职责：识别高效 Steering 语法 → 总结规律 → 应用于文档改写
+- 由 `.agents/skills/gosh` 实现
+
 **Target**：
 - 被训练的"目标能力"
 - 只能是 Skill（放在根目录的 `skills/` 目录下）
-- Yasal 和 AutoSearch 都是为了改进 Target 而服务
+- Yasal、AutoSearch、Gosh 都是为了改进 Target 而服务
 
 ### 执行流程
 
@@ -45,7 +50,8 @@ Target 是本轮训练的目标能力，格式为：
 2. **启动 AutoSearch** → 将控制权交给 autoresearch
 3. **AutoSearch 准备** → 准备 INTENT
 4. **AutoSearch 执行** → 分析、改进、迭代 Target
-5. **评估结果** → 根据 Metrics 判断是否达标
+5. **（可选）Gosh 审查** → 对改写后的文档做语言层优化
+6. **评估结果** → 根据 Metrics 判断是否达标
 
 **MUST** 先启动 Yasal，后启动 AutoSearch。
 
@@ -102,6 +108,8 @@ lessons 目录中的学习资料，主要是指在真实场景下使用待训练
 训练过程中产生的中间产物（如 INTENT、分析草稿等）放在 `context/*` 目录下。
 
 **MUST** 每轮训练结束后，将本轮中有效提升效果的关键策略、改进路径等，整理输出到 `context/YASAL.md`，作为后续训练的经验积累。
+
+**MUST** 如果本轮训练中通过 Gosh 提炼出了新的 Steering 规律，将其整理输出到 `context/GOSH.md`，作为族群语言的持续积累。
 
 ## Metrics
 
