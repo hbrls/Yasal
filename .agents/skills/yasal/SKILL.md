@@ -114,7 +114,9 @@ lessons 目录中的学习资料，主要是指在真实场景下使用待训练
 
 **MUST** 每轮训练结束后，将本轮中有效提升效果的关键策略、改进路径等，整理输出到 `context/YASAL.md`，作为后续训练的经验积累。
 
-**MUST** 如果本轮训练中通过 Gosh 提炼出了新的 Steering 规律，将其整理输出到 `context/GOSH.md`，作为族群语言的持续积累。
+**MUST** 如果本轮训练中调用了 Gosh，将本轮语言层学习的流程性总结精简输出到 `context/GOSH.md`。这里的内容只用于记录本轮学习情况、处理流程、所覆盖的维度、产出落点和后续动作，**NEVER** 在此重复展开具体规律正文。
+
+**MUST** 通过 Gosh 产出的实际规律、规范或知识沉淀，写入 Target 对应的正式位置；如果 Target 是 Gosh，则写入 `gosh/assets/*` 或 `gosh/findings/*` 对应位置，而不是写在 `.context/GOSH.md` 中。
 
 ## Metrics
 
