@@ -1,0 +1,301 @@
+# system-prompts-and-models-of-ai-tools
+- source: system-prompts-and-models-of-ai-tools/Amp/claude-4-sonnet.yaml
+  target_dir: system-prompts/Amp
+  target_file: amp-claude-4-sonnet-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Amp/gpt-5.yaml
+  target_dir: system-prompts/Amp
+  target_file: amp-gpt-5-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude Code 2.0.txt
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-code-20-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude Sonnet 4.6.txt
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-sonnet-46-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Sonnet 4.5 Prompt.txt
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-sonnet-45-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude Code/Prompt.txt
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-code-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude Code/Tools.json
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-code-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude for Chrome/Prompt.txt
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-for-chrome-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Anthropic/Claude for Chrome/Tools.json
+  target_dir: system-prompts/Anthropic
+  target_file: anthropic-claude-for-chrome-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Augment Code/claude-4-sonnet-agent-prompts.txt
+  target_dir: system-prompts/Augment
+  target_file: augment-code-claude-4-sonnet-agent-prompts-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Augment Code/claude-4-sonnet-tools.json
+  target_dir: system-prompts/Augment
+  target_file: augment-code-claude-4-sonnet-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Augment Code/gpt-5-agent-prompts.txt
+  target_dir: system-prompts/Augment
+  target_file: augment-code-gpt-5-agent-prompts-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Augment Code/gpt-5-tools.json
+  target_dir: system-prompts/Augment
+  target_file: augment-code-gpt-5-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cluely/Default Prompt.txt
+  target_dir: system-prompts/Cluely
+  target_file: cluely-default-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cluely/Enterprise Prompt.txt
+  target_dir: system-prompts/Cluely
+  target_file: cluely-enterprise-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/CodeBuddy Prompts/Chat Prompt.txt
+  target_dir: system-prompts/Codebuddy
+  target_file: codebuddy-prompts-chat-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/CodeBuddy Prompts/Craft Prompt.txt
+  target_dir: system-prompts/Codebuddy
+  target_file: codebuddy-prompts-craft-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Comet Assistant/System Prompt.txt
+  target_dir: system-prompts/Comet
+  target_file: comet-assistant-system-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Comet Assistant/tools.json
+  target_dir: system-prompts/Comet
+  target_file: comet-assistant-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent CLI Prompt 2025-08-07.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-cli-prompt-2025-08-07-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt 2.0.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-prompt-20-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt 2025-09-03.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-prompt-2025-09-03-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.0.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-prompt-v10-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Prompt v1.2.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-prompt-v12-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Agent Tools v1.0.json
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-agent-tools-v10-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Cursor Prompts/Chat Prompt.txt
+  target_dir: system-prompts/Cursor
+  target_file: cursor-prompts-chat-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Devin AI/DeepWiki Prompt.txt
+  target_dir: system-prompts/Devin
+  target_file: devin-ai-deepwiki-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Devin AI/Prompt.txt
+  target_dir: system-prompts/Devin
+  target_file: devin-ai-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Emergent/Prompt.txt
+  target_dir: system-prompts/Emergent
+  target_file: emergent-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Emergent/Tools.json
+  target_dir: system-prompts/Emergent
+  target_file: emergent-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Google/Antigravity/Fast Prompt.txt
+  target_dir: system-prompts/Google
+  target_file: google-antigravity-fast-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Google/Antigravity/planning-mode.txt
+  target_dir: system-prompts/Google
+  target_file: google-antigravity-planning-mode-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Google/Gemini/AI Studio vibe-coder.txt
+  target_dir: system-prompts/Google
+  target_file: google-gemini-ai-studio-vibe-coder-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Junie/Prompt.txt
+  target_dir: system-prompts/Junie
+  target_file: junie-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Kiro/Mode_Clasifier_Prompt.txt
+  target_dir: system-prompts/Kiro
+  target_file: kiro-mode_clasifier_prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Kiro/Spec_Prompt.txt
+  target_dir: system-prompts/Kiro
+  target_file: kiro-spec_prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Kiro/Vibe_Prompt.txt
+  target_dir: system-prompts/Kiro
+  target_file: kiro-vibe_prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Leap.new/Prompts.txt
+  target_dir: system-prompts/Leap.new
+  target_file: leapnew-prompts-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Leap.new/tools.json
+  target_dir: system-prompts/Leap.new
+  target_file: leapnew-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Lovable/Agent Prompt.txt
+  target_dir: system-prompts/Lovable
+  target_file: lovable-agent-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Lovable/Agent Tools.json
+  target_dir: system-prompts/Lovable
+  target_file: lovable-agent-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Agent loop.txt
+  target_dir: system-prompts/Manus
+  target_file: manus-agent-tools-prompt-agent-loop-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Modules.txt
+  target_dir: system-prompts/Manus
+  target_file: manus-agent-tools-prompt-modules-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/Prompt.txt
+  target_dir: system-prompts/Manus
+  target_file: manus-agent-tools-prompt-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Manus Agent Tools & Prompt/tools.json
+  target_dir: system-prompts/Manus
+  target_file: manus-agent-tools-prompt-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/NotionAi/Prompt.txt
+  target_dir: system-prompts/Notionai
+  target_file: notionai-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/NotionAi/tools.json
+  target_dir: system-prompts/Notionai
+  target_file: notionai-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Bolt/Prompt.txt
+  target_dir: system-prompts/Bolt
+  target_file: open-source-prompts-bolt-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Cline/Prompt.txt
+  target_dir: system-prompts/Cline
+  target_file: open-source-prompts-cline-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Codex CLI/Prompt.txt
+  target_dir: system-prompts/Codex
+  target_file: open-source-prompts-codex-cli-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Codex CLI/openai-codex-cli-system-prompt-20250820.txt
+  target_dir: system-prompts/Codex
+  target_file: open-source-prompts-codex-cli-openai-codex-cli-system-prompt-20250820-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Gemini CLI/google-gemini-cli-system-prompt.txt
+  target_dir: system-prompts/Gemini
+  target_file: open-source-prompts-gemini-cli-google-gemini-cli-system-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/Lumo/Prompt.txt
+  target_dir: system-prompts/Lumo
+  target_file: open-source-prompts-lumo-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Open Source prompts/RooCode/Prompt.txt
+  target_dir: system-prompts/Roocode
+  target_file: open-source-prompts-roocode-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Orchids.app/Decision-making prompt.txt
+  target_dir: system-prompts/Orchids.app
+  target_file: orchidsapp-decision-making-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Orchids.app/System Prompt.txt
+  target_dir: system-prompts/Orchids.app
+  target_file: orchidsapp-system-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Perplexity/Prompt.txt
+  target_dir: system-prompts/Perplexity
+  target_file: perplexity-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke agent.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke-agent-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p1.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p1-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p2.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p2-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p3.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p3-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p4.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p4-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p5.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p5-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Poke/Poke_p6.txt
+  target_dir: system-prompts/Poke
+  target_file: poke-poke_p6-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Qoder/Quest Action.txt
+  target_dir: system-prompts/Qoder
+  target_file: qoder-quest-action-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Qoder/Quest Design.txt
+  target_dir: system-prompts/Qoder
+  target_file: qoder-quest-design-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Qoder/prompt.txt
+  target_dir: system-prompts/Qoder
+  target_file: qoder-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Replit/Prompt.txt
+  target_dir: system-prompts/Replit
+  target_file: replit-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Replit/Tools.json
+  target_dir: system-prompts/Replit
+  target_file: replit-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Same.dev/Prompt.txt
+  target_dir: system-prompts/Same.dev
+  target_file: samedev-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Same.dev/Tools.json
+  target_dir: system-prompts/Same.dev
+  target_file: samedev-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Trae/Builder Prompt.txt
+  target_dir: system-prompts/Trae
+  target_file: trae-builder-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Trae/Builder Tools.json
+  target_dir: system-prompts/Trae
+  target_file: trae-builder-tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Trae/Chat Prompt.txt
+  target_dir: system-prompts/Trae
+  target_file: trae-chat-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Traycer AI/phase_mode_prompts.txt
+  target_dir: system-prompts/Traycer
+  target_file: traycer-ai-phase_mode_prompts-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Traycer AI/phase_mode_tools.json
+  target_dir: system-prompts/Traycer
+  target_file: traycer-ai-phase_mode_tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Traycer AI/plan_mode_prompts
+  target_dir: system-prompts/Traycer
+  target_file: traycer-ai-plan_mode_prompts-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Traycer AI/plan_mode_tools.json
+  target_dir: system-prompts/Traycer
+  target_file: traycer-ai-plan_mode_tools-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/Prompt.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/chat-titles.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-chat-titles-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/claude-sonnet-4.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-claude-sonnet-4-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/gemini-2.5-pro.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-gemini-25-pro-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/gpt-4.1.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-gpt-41-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/gpt-4o.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-gpt-4o-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/gpt-5-mini.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-gpt-5-mini-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/gpt-5.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-gpt-5-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/VSCode Agent/nes-tab-completion.txt
+  target_dir: system-prompts/Vscode
+  target_file: vscode-agent-nes-tab-completion-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Warp.dev/Prompt.txt
+  target_dir: system-prompts/Warp.dev
+  target_file: warpdev-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Windsurf/Prompt Wave 11.txt
+  target_dir: system-prompts/Windsurf
+  target_file: windsurf-prompt-wave-11-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Windsurf/Tools Wave 11.txt
+  target_dir: system-prompts/Windsurf
+  target_file: windsurf-tools-wave-11-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/DocumentAction.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-documentaction-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/ExplainAction.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-explainaction-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/MessageAction.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-messageaction-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/PlaygroundAction.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-playgroundaction-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/PreviewAction.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-previewaction-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Xcode/System.txt
+  target_dir: system-prompts/Xcode
+  target_file: xcode-system-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/Z.ai Code/prompt.txt
+  target_dir: system-prompts/Z.ai
+  target_file: zai-code-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/dia/Prompt.txt
+  target_dir: system-prompts/Dia
+  target_file: dia-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/v0 Prompts and Tools/Prompt.txt
+  target_dir: system-prompts/V0
+  target_file: v0-prompts-and-tools-prompt-Unclassified.md
+- source: system-prompts-and-models-of-ai-tools/v0 Prompts and Tools/Tools.json
+  target_dir: system-prompts/V0
+  target_file: v0-prompts-and-tools-tools-Unclassified.md
