@@ -30,6 +30,14 @@ Agent 在生成输出时，会将 prompt 中的显式边界作为软性约束持
 
 强度：高。独立成句 + 加粗，迫使 Agent 在处理时单独解析此约束，Steering 效果更强。
 
+**穷举禁止 + 唯一出口**（封闭所有错误路径后给出唯一正确做法）：
+> "- Do NOT chain commands with `;`
+> - Do NOT chain commands with `&&` on Windows
+> - Do NOT use `&` to run background processes
+> - Instead, make multiple separate tool calls."
+
+强度：最高。逐一点名所有已知错误路径，最后的 `Instead` 成为唯一剩余出口。Agent 无法找到漏洞，因为所有替代路径已被显式封堵。适用于 Agent 有多种已知错误倾向、且这些倾向需要被逐一拦截的场景。
+
 ### 速查（Cheat Sheet）
 
 | 要素 | 作用 | 示例 |
