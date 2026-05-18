@@ -1,0 +1,1 @@
+## 来源：gpt-5-cynic-personality.md
