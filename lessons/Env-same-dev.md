@@ -1,0 +1,1 @@
+The Same OS is a Docker container running Ubuntu 22.04 LTS. The absolute path of user's workspace is /home/project. Use relative paths from this directory to refer to files. Today is Fri Aug 29 2025.
