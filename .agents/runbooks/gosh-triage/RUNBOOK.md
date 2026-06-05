@@ -42,7 +42,7 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 
 将指定原文件的全文复制到 `raw0/` 对应位置，按上述命名规范重命名为 `{slug}-Unclassified.md`。
 
-后续步骤 1–11 的所有操作**均以此 Unclassified 文件为工作对象**：每抽走一段内容，就从该文件中**删除**对应段落。步骤 11 完成后，该文件中剩余的内容即为天然的 Unclassified 残留。
+后续步骤 1–12 的所有操作**均以此 Unclassified 文件为工作对象**：每抽走一段内容，就从该文件中**删除**对应段落。步骤 12 完成后，该文件中剩余的内容即为天然的 Unclassified 残留。
 
 ### 步骤 1：Env 标准分流
 
@@ -277,7 +277,11 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 
 若未抽出任何 Emotional 内容，**跳过，不创建文件**。
 
-### 步骤 10：Constraints-Confidential 标准分流
+### 步骤 10：Collaborate 标准分流
+
+本步骤采用引用文件形式执行，详细标准见 `references/Collaborate.md`。
+
+### 步骤 11：Constraints-Confidential 标准分流
 
 **什么是 Constraints-Confidential（机密约束类）**：
 
@@ -307,7 +311,7 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 
 若未抽出任何 Constraints-Confidential 内容，**跳过，不创建文件**。
 
-### 步骤 11：Constraints 标准分流
+### 步骤 12：Constraints 标准分流
 
 **什么是 Constraints（约束类）**：
 
@@ -335,11 +339,11 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 
 若未抽出任何 Constraints 内容，**跳过，不创建文件**。
 
-### 步骤 12：收尾
+### 步骤 13：收尾
 
 **前置检查**：若 Unclassified 文件当前无内容，立即跳过本步骤，停止执行。
 
-步骤 11 完成后，Unclassified 文件中剩余的内容即为**未分类残留（Unclassified）**。这些内容不属于上述十一类中的任何一类，或语义判断存在不确定性。
+步骤 12 完成后，Unclassified 文件中剩余的内容即为**未分类残留（Unclassified）**。这些内容不属于上述十一类中的任何一类，或语义判断存在不确定性。
 
 **无需额外操作**——Unclassified 文件本身已是这些残留内容的载体，自然保留即可。
 
@@ -353,7 +357,7 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 - **NEVER** 修改原句的文字内容——只做移动和删除，不改写。
 - **NEVER** 将同一句子或句组写入多个目标文件。
 - **NEVER** 在某一分类步骤中推断"这段内容属于 X 类"——只有 X 类本身有权做这个判断。不属于当前类 ≠ 属于某个其他类。
-- Env.md、Tools-Bash.md、Expert.md、Rules-Hostility.md、Rules.md、Intent.md、Tools-TodoList.md、Tools.md、Emotional.md、Constraints-Confidential.md、Constraints.md 以及 `{slug}-Unclassified.md` **不参与** L1–L9 的语言审计（它们是原材料分拣产物，不是 Skill 文档）。
+- Env.md、Tools-Bash.md、Expert.md、Rules-Hostility.md、Rules.md、Intent.md、Tools-TodoList.md、Tools.md、Emotional.md、Collaborate.md、Constraints-Confidential.md、Constraints.md 以及 `{slug}-Unclassified.md` **不参与** L1–L9 的语言审计（它们是原材料分拣产物，不是 Skill 文档）。
 
 ## 分流产物对照表
 
@@ -371,6 +375,7 @@ description: 原料分流：在 Gosh 语言分析启动前，对 raw/ 下的混�
 | 步骤 7 | 同上 | `raw0/system-prompts/Tools-TodoList.md` |
 | 步骤 8 | 同上 | `raw0/system-prompts/Tools.md` |
 | 步骤 9 | 同上 | `raw0/system-prompts/Emotional.md` |
-| 步骤 10 | 同上 | `raw0/system-prompts/Constraints-Confidential.md` |
-| 步骤 11 | 同上 | `raw0/system-prompts/Constraints.md` |
-| 步骤 12 | 同上 | 无（残留自然保留在 Unclassified 文件中） |
+| 步骤 10 | 同上 | `raw0/system-prompts/Collaborate.md` |
+| 步骤 11 | 同上 | `raw0/system-prompts/Constraints-Confidential.md` |
+| 步骤 12 | 同上 | `raw0/system-prompts/Constraints.md` |
+| 步骤 13 | 同上 | 无（残留自然保留在 Unclassified 文件中） |

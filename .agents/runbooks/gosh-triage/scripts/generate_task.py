@@ -10,17 +10,18 @@ STEPS = [
     # {'num': 1, 'name': 'Env',      'from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Env.md'},
     # {'num': 2, 'name': 'Tools-Bash','from': '{slug}-Unclassified.md',              'to': 'raw0/{first_level_dir}/Tools-Bash.md'},
     # {'num': 3, 'name': 'Expert',   'from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Expert.md'},
-    {'num': 4, 'name': 'Rules-Hostility','from': '{source}',                       'to': '{target_file}'},
+    # {'num': 4, 'name': 'Rules-Hostility','from': '{source}',                       'to': '{target_file}'},
     # {'num': 5, 'name': 'Rules',    'from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Rules.md'},
     # {'num': 6, 'name': 'Intent',   'from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Intent.md'},
     # {'num': 7, 'name': 'Tools-TodoList','from': '{slug}-Unclassified.md',          'to': 'raw0/{first_level_dir}/Tools-TodoList.md'},
     # {'num': 8, 'name': 'Tools',    'from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Tools.md'},
     # {'num': 9, 'name': 'Emotional','from': '{slug}-Unclassified.md',               'to': 'raw0/{first_level_dir}/Emotional.md'},
-    # {'num': 10,'name': 'Constraints-Confidential','from': '{slug}-Unclassified.md','to': 'raw0/{first_level_dir}/Constraints-Confidential.md'},
-    # {'num': 11,'name': 'Constraints','from': '{slug}-Unclassified.md',             'to': 'raw0/{first_level_dir}/Constraints.md'},
+    {'num': 10,'name': 'Collaborate','from': '{source}',                             'to': '{target_file}'},
+    # {'num': 11,'name': 'Constraints-Confidential','from': '{slug}-Unclassified.md','to': 'raw0/{first_level_dir}/Constraints-Confidential.md'},
+    # {'num': 12,'name': 'Constraints','from': '{slug}-Unclassified.md',             'to': 'raw0/{first_level_dir}/Constraints.md'},
 ]
 
-STEP_OVERVIEW = """临时任务：仅执行步骤 4：Rules-Hostility → Rules-Hostility-*.md"""
+STEP_OVERVIEW = """临时任务：仅执行步骤 10：Collaborate → Collaborate-*.md"""
 
 
 def build_prompt(step: dict, source: str, target_file: str) -> str:
@@ -28,10 +29,10 @@ def build_prompt(step: dict, source: str, target_file: str) -> str:
     to_path = step['to'].format(source=source, target_file=target_file)
 
     header = f"对 lessons 文件 `{from_path}` 执行临时 gosh-triage 分流任务："
-    detail = f"从 `{from_path}` 中逐句语义分析，抽取 Rules-Hostility 相关内容到 `{to_path}`；抽走后从原文件 `{from_path}` 中删除对应语句或句组。若未抽出任何 Rules-Hostility 内容，不创建目标文件，也不修改原文件。若抽出内容且目标文件已存在，则读取目标文件完整现有内容，在末尾追加 `---` 分隔行、`## 来源：{from_path}` 和抽出内容；若目标文件不存在，则创建后写入 `## 来源：{from_path}` 和抽出内容。"
+    detail = f"从 `{from_path}` 中逐句语义分析，抽取 Collaborate 相关内容到 `{to_path}`；抽走后从原文件 `{from_path}` 中删除对应语句或句组。若未抽出任何 Collaborate 内容，不创建目标文件，也不修改原文件。若抽出内容且目标文件已存在，则读取目标文件完整现有内容，在末尾追加 `---` 分隔行、`## 来源：{from_path}` 和抽出内容；若目标文件不存在，则创建后写入 `## 来源：{from_path}` 和抽出内容。"
 
     return f"""加载 `.agents/runbooks/gosh-triage/RUNBOOK.md` 并掌握工作流。
-重点读取 `.agents/runbooks/gosh-triage/references/Rules-Hostility.md`，以其中标准判断是否属于 Rules-Hostility。
+重点读取 `.agents/runbooks/gosh-triage/references/Collaborate.md`，以其中标准判断是否属于 Collaborate。
 
 {header}
 
@@ -44,7 +45,7 @@ def build_prompt(step: dict, source: str, target_file: str) -> str:
 
 SKIP_EXTS = {'.png', '.jpg', '.jpeg', '.gif', '.svg'}
 SKIP_FILES = {'README.md', 'output.yaml', 'diff.py', 'generate_output.py', 'generate_task.py', '.gitkeep'}
-SKIP_PREFIXES = ('Rules-Hostility',)
+SKIP_PREFIXES = ('Collaborate-',)
 KNOWN_EXTS = {'.txt', '.json', '.yaml', '.yml', '.md', '.py', '.xml', '.html', '.csv', '.toml', '.sh', '.bash', '.cfg', '.ini', '.log', '.tsv', '.rst', '.tex'}
 
 
@@ -96,17 +97,17 @@ def compute_unclassified_info(source: str, target_dir: str) -> tuple:
     return first_level_dir, slug, unclassified_filename
 
 
-def compute_rules_hostility_target(rel_path: str) -> str:
+def compute_collaborate_target(rel_path: str) -> str:
     path = Path(rel_path)
     stem = path.stem
-    if stem == 'Emotional':
-        target_stem = 'Rules-Hostility'
-    elif stem.startswith('Emotional-'):
-        target_stem = f"Rules-Hostility-{stem[len('Emotional-'):]}"
-    elif stem.startswith('Emotional '):
-        target_stem = f"Rules-Hostility {stem[len('Emotional '):]}"
+    if stem == 'Constraints':
+        target_stem = 'Collaborate'
+    elif stem.startswith('Constraints-'):
+        target_stem = f"Collaborate-{stem[len('Constraints-'):]}"
+    elif stem.startswith('Constraints '):
+        target_stem = f"Collaborate {stem[len('Constraints '):]}"
     else:
-        target_stem = f"Rules-Hostility-{stem}"
+        target_stem = f"Collaborate-{stem}"
     return path.with_name(f"{target_stem}.md").as_posix()
 
 
@@ -153,7 +154,7 @@ def generate_yaml(base_path: str, project_root: Path, target_first_level: str):
             entries.append({
                 'source': rel,
                 'target_dir': 'lessons',
-                'target_file': compute_rules_hostility_target(rel)
+                'target_file': compute_collaborate_target(rel)
             })
 
     output_path = Path(base_path) / 'output.yaml'
@@ -236,7 +237,7 @@ def main():
     p_output.add_argument('--source', default='lessons', help='临时忽略，固定扫描 lessons')
     p_output.add_argument('--target', default='lessons', help='临时忽略，固定输出到 lessons')
 
-    p_task = sub.add_parser('gen-task', help='临时：从 lessons/output.yaml 生成 Rules-Hostility 任务文件')
+    p_task = sub.add_parser('gen-task', help='临时：从 lessons/output.yaml 生成 Collaborate 任务文件')
     p_task.add_argument('--source', default='lessons', help='临时忽略，固定读取 lessons/output.yaml')
     p_task.add_argument('--target', default='lessons', help='临时忽略，固定目标为 lessons')
 
