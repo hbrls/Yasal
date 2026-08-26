@@ -12,7 +12,7 @@ SKIP_FILES = {
     'generate_output.py',
     'generate_task.py',
     'gen_index.py',
-    'gen_task.py',
+    'gen_raw0_tail_task.py',
     '.DS_Store',
     '.gitkeep',
 }
