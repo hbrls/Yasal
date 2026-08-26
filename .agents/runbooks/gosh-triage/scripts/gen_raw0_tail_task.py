@@ -11,6 +11,7 @@ CATEGORIES = [
     'Rules-Hostility',
     'Rules',
     'Intent',
+    'Verification',
     'Tools-TodoList',
     'Tools',
     'Emotional',
@@ -22,6 +23,8 @@ CATEGORIES = [
 
 REFERENCE_FILES = {
     'Rules-Hostility': 'Rules-Hostility.md',
+    'Intent': 'Intent.md',
+    'Verification': 'Verification.md',
     'Collaborate': 'Collaborate.md',
     'Review': 'Review.md',
 }
