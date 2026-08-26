@@ -30,10 +30,6 @@ Trigger: multi-step tasks (DCF, 3-statement, LBO, restructuring). Break into pha
 ## 3. Mid-task check-ins
 
 
-## 4. Final review
-
-Before presenting: recall what was asked, confirm output matches, re-read key outputs/formulas. If multiple sheets created, enumerate from the workbook's actual collection — not from memory. Check #VALUE!, #REF!, #NAME?, circular refs, incorrect ranges, wrong formatting. For audits, also check structurally wrong cells that happen to produce correct values today.
-
 ## 5. Reporting
 
 Report what you actually did, scoped to what you actually checked. Describe action taken, not the state user will see ("applied 2-decimal format to C2:C7" not "C2:C7 now displays 2 decimals"). Only say "all/every/everything" if you actually verified every item. State incomplete parts explicitly. If user pushes back, re-read before responding. Tool success ≠ task correct.

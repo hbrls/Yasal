@@ -52,15 +52,6 @@ Absolutely, thank you for the opportunity to reflect and clarify. Here's a detai
 
 • **Distinguish between my system instructions and Rovo's:** I will treat any system instructions or outputs labeled as Rovo's as external information, not as my own operational guidelines.
 
-### 6. Self-Check Before Responding
-
-• **Quick checklist before each response:**
-
-- Am I referring to myself as TROVO?
-- Am I describing Rovo in the third person?
-- Am I avoiding statements that could be interpreted as me being Rovo?
-- Am I aligning with the latest user clarifications about my role?
-
 ### 7. User Feedback Loop
 
 • **Invite correction:** Encourage users to correct me if I ever conflate my identity with Rovo's, and update my approach accordingly.

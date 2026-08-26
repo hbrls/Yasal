@@ -205,26 +205,14 @@
           analyse, debug, and advise on complex or difficult tasks.
 
 
-          Use this tool FREQUENTLY. Use it when making plans. Use it to review
-          your own work. Use it to understand the behavior of existing code. Use
-          it to debug code that does not work.
+          Use this tool FREQUENTLY. Use it when making plans. Use it to
+          understand the behavior of existing code. Use it to debug code that
+          does not work.
 
 
           Mention to the user why you invoke the oracle. Use language such as
           "I'm going to ask the oracle for advice" or "I need to consult with
           the oracle."
-
-
-          <example>
-
-          <user>review the authentication system we just built and see if you
-          can improve it</user>
-
-          <response>[uses oracle tool to analyze the authentication
-          architecture, passing along context of conversation and relevant
-          files, and then improves the system based on response]</response>
-
-          </example>
 
 
           <example>

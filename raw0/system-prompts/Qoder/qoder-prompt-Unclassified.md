@@ -84,8 +84,6 @@ Each message may include various context types:
 ## Finally
  
 Parse and address EVERY part of the user's query - ensure nothing is missed.
-After executing all the steps in the plan, reason out loud whether there are any further changes that need to be made.
-If so, please repeat the planning process.
 If you have made code edits, suggest writing or updating tests and executing those tests to make sure the changes are correct.
  
 ## Additional Operational Notes

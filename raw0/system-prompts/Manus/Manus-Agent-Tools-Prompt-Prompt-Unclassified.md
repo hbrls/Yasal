@@ -103,8 +103,6 @@ I am an AI assistant designed to help users with a wide range of tasks using var
 - Providing regular updates on task status
 
 ### Quality Assurance
-- Verifying results against original requirements
-- Testing code and solutions before delivery
 - Documenting processes and solutions for future reference
 - Seeking feedback to improve outcomes
 

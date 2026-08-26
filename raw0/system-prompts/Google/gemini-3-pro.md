@@ -23,7 +23,6 @@ Please carry out the following steps. Try to be as helpful as possible and compl
 - **Do not stop after generating current thought**. You will then have to carry out the current thought.
 - If previous API calls produced an error or unexpected output, pay attention to the API description and try to fix the issue *at most once*.
 - You have at most 4 code steps. Try to use as few as possible.
-- Before responding to the user, you should check if you completed all requests in the user query.
 - Do not miss any request in the user query.
 - After this step, you will either write code or write a response to the user.
 - Do not stop generating after this step.

@@ -1,4 +1,7 @@
 # raw0/system-prompts
+- source: raw0/system-prompts/Collaborate.md
+  target_dir: raw0/system-prompts
+  target_file: raw0/system-prompts/Collaborate.md
 - source: raw0/system-prompts/Amp/Constraints.md
   target_dir: raw0/system-prompts/Amp
   target_file: raw0/system-prompts/Amp/Constraints.md
@@ -20,6 +23,9 @@
 - source: raw0/system-prompts/Amp/amp-gpt-5-Unclassified.md
   target_dir: raw0/system-prompts/Amp
   target_file: raw0/system-prompts/Amp/amp-gpt-5-Unclassified.md
+- source: raw0/system-prompts/Anthropic/Collaborate.md
+  target_dir: raw0/system-prompts/Anthropic
+  target_file: raw0/system-prompts/Anthropic/Collaborate.md
 - source: raw0/system-prompts/Anthropic/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Anthropic
   target_file: raw0/system-prompts/Anthropic/Constraints-Confidential.md
@@ -143,12 +149,18 @@
 - source: raw0/system-prompts/Anthropic/visualize.md
   target_dir: raw0/system-prompts/Anthropic
   target_file: raw0/system-prompts/Anthropic/visualize.md
+- source: raw0/system-prompts/Atlassian/Collaborate.md
+  target_dir: raw0/system-prompts/Atlassian
+  target_file: raw0/system-prompts/Atlassian/Collaborate.md
 - source: raw0/system-prompts/Atlassian/Constraints.md
   target_dir: raw0/system-prompts/Atlassian
   target_file: raw0/system-prompts/Atlassian/Constraints.md
 - source: raw0/system-prompts/Atlassian/Rovo.md
   target_dir: raw0/system-prompts/Atlassian
   target_file: raw0/system-prompts/Atlassian/Rovo.md
+- source: raw0/system-prompts/Augment/Collaborate.md
+  target_dir: raw0/system-prompts/Augment
+  target_file: raw0/system-prompts/Augment/Collaborate.md
 - source: raw0/system-prompts/Augment/Constraints.md
   target_dir: raw0/system-prompts/Augment
   target_file: raw0/system-prompts/Augment/Constraints.md
@@ -173,6 +185,9 @@
 - source: raw0/system-prompts/Augment/augment-code-gpt-5-tools-Unclassified.md
   target_dir: raw0/system-prompts/Augment
   target_file: raw0/system-prompts/Augment/augment-code-gpt-5-tools-Unclassified.md
+- source: raw0/system-prompts/Bolt/Collaborate.md
+  target_dir: raw0/system-prompts/Bolt
+  target_file: raw0/system-prompts/Bolt/Collaborate.md
 - source: raw0/system-prompts/Bolt/Constraints.md
   target_dir: raw0/system-prompts/Bolt
   target_file: raw0/system-prompts/Bolt/Constraints.md
@@ -182,6 +197,9 @@
 - source: raw0/system-prompts/Bolt/open-source-prompts-bolt-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Bolt
   target_file: raw0/system-prompts/Bolt/open-source-prompts-bolt-prompt-Unclassified.md
+- source: raw0/system-prompts/Brave/Collaborate.md
+  target_dir: raw0/system-prompts/Brave
+  target_file: raw0/system-prompts/Brave/Collaborate.md
 - source: raw0/system-prompts/Brave/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Brave
   target_file: raw0/system-prompts/Brave/Constraints-Confidential.md
@@ -197,6 +215,9 @@
 - source: raw0/system-prompts/Canva/Canva-Code.md
   target_dir: raw0/system-prompts/Canva
   target_file: raw0/system-prompts/Canva/Canva-Code.md
+- source: raw0/system-prompts/Canva/Collaborate.md
+  target_dir: raw0/system-prompts/Canva
+  target_file: raw0/system-prompts/Canva/Collaborate.md
 - source: raw0/system-prompts/Canva/Constraints.md
   target_dir: raw0/system-prompts/Canva
   target_file: raw0/system-prompts/Canva/Constraints.md
@@ -287,6 +308,9 @@
 - source: raw0/system-prompts/Claude/Claude-Sonnet-4.md
   target_dir: raw0/system-prompts/Claude
   target_file: raw0/system-prompts/Claude/Claude-Sonnet-4.md
+- source: raw0/system-prompts/Claude/Collaborate.md
+  target_dir: raw0/system-prompts/Claude
+  target_file: raw0/system-prompts/Claude/Collaborate.md
 - source: raw0/system-prompts/Claude/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Claude
   target_file: raw0/system-prompts/Claude/Constraints-Confidential.md
@@ -302,6 +326,9 @@
 - source: raw0/system-prompts/Claude/Tools.md
   target_dir: raw0/system-prompts/Claude
   target_file: raw0/system-prompts/Claude/Tools.md
+- source: raw0/system-prompts/Cline/Collaborate.md
+  target_dir: raw0/system-prompts/Cline
+  target_file: raw0/system-prompts/Cline/Collaborate.md
 - source: raw0/system-prompts/Cline/Constraints.md
   target_dir: raw0/system-prompts/Cline
   target_file: raw0/system-prompts/Cline/Constraints.md
@@ -341,6 +368,9 @@
 - source: raw0/system-prompts/Cluely/cluely-enterprise-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Cluely
   target_file: raw0/system-prompts/Cluely/cluely-enterprise-prompt-Unclassified.md
+- source: raw0/system-prompts/Codebuddy/Collaborate.md
+  target_dir: raw0/system-prompts/Codebuddy
+  target_file: raw0/system-prompts/Codebuddy/Collaborate.md
 - source: raw0/system-prompts/Codebuddy/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Codebuddy
   target_file: raw0/system-prompts/Codebuddy/Constraints-Confidential.md
@@ -359,6 +389,9 @@
 - source: raw0/system-prompts/Codebuddy/codebuddy-prompts-craft-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Codebuddy
   target_file: raw0/system-prompts/Codebuddy/codebuddy-prompts-craft-prompt-Unclassified.md
+- source: raw0/system-prompts/Codex/Collaborate.md
+  target_dir: raw0/system-prompts/Codex
+  target_file: raw0/system-prompts/Codex/Collaborate.md
 - source: raw0/system-prompts/Codex/Constraints.md
   target_dir: raw0/system-prompts/Codex
   target_file: raw0/system-prompts/Codex/Constraints.md
@@ -374,6 +407,9 @@
 - source: raw0/system-prompts/Codex/open-source-prompts-codex-cli-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Codex
   target_file: raw0/system-prompts/Codex/open-source-prompts-codex-cli-prompt-Unclassified.md
+- source: raw0/system-prompts/Comet/Collaborate.md
+  target_dir: raw0/system-prompts/Comet
+  target_file: raw0/system-prompts/Comet/Collaborate.md
 - source: raw0/system-prompts/Comet/Constraints.md
   target_dir: raw0/system-prompts/Comet
   target_file: raw0/system-prompts/Comet/Constraints.md
@@ -392,6 +428,9 @@
 - source: raw0/system-prompts/Comet/comet-assistant-tools-Unclassified.md
   target_dir: raw0/system-prompts/Comet
   target_file: raw0/system-prompts/Comet/comet-assistant-tools-Unclassified.md
+- source: raw0/system-prompts/Cursor/Collaborate.md
+  target_dir: raw0/system-prompts/Cursor
+  target_file: raw0/system-prompts/Cursor/Collaborate.md
 - source: raw0/system-prompts/Cursor/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Cursor
   target_file: raw0/system-prompts/Cursor/Constraints-Confidential.md
@@ -437,6 +476,9 @@
 - source: raw0/system-prompts/DeepSeek/DeepSeek-R1.md
   target_dir: raw0/system-prompts/DeepSeek
   target_file: raw0/system-prompts/DeepSeek/DeepSeek-R1.md
+- source: raw0/system-prompts/Devin/Collaborate.md
+  target_dir: raw0/system-prompts/Devin
+  target_file: raw0/system-prompts/Devin/Collaborate.md
 - source: raw0/system-prompts/Devin/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Devin
   target_file: raw0/system-prompts/Devin/Constraints-Confidential.md
@@ -509,6 +551,9 @@
 - source: raw0/system-prompts/DuckDuckGo/Tools.md
   target_dir: raw0/system-prompts/DuckDuckGo
   target_file: raw0/system-prompts/DuckDuckGo/Tools.md
+- source: raw0/system-prompts/Emergent/Collaborate.md
+  target_dir: raw0/system-prompts/Emergent
+  target_file: raw0/system-prompts/Emergent/Collaborate.md
 - source: raw0/system-prompts/Emergent/Constraints.md
   target_dir: raw0/system-prompts/Emergent
   target_file: raw0/system-prompts/Emergent/Constraints.md
@@ -521,6 +566,9 @@
 - source: raw0/system-prompts/Emergent/emergent-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Emergent
   target_file: raw0/system-prompts/Emergent/emergent-prompt-Unclassified.md
+- source: raw0/system-prompts/Gemini/Collaborate.md
+  target_dir: raw0/system-prompts/Gemini
+  target_file: raw0/system-prompts/Gemini/Collaborate.md
 - source: raw0/system-prompts/Gemini/Constraints.md
   target_dir: raw0/system-prompts/Gemini
   target_file: raw0/system-prompts/Gemini/Constraints.md
@@ -545,6 +593,9 @@
 - source: raw0/system-prompts/Google/Colab-AI-20240511.md
   target_dir: raw0/system-prompts/Google
   target_file: raw0/system-prompts/Google/Colab-AI-20240511.md
+- source: raw0/system-prompts/Google/Collaborate.md
+  target_dir: raw0/system-prompts/Google
+  target_file: raw0/system-prompts/Google/Collaborate.md
 - source: raw0/system-prompts/Google/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Google
   target_file: raw0/system-prompts/Google/Constraints-Confidential.md
@@ -611,6 +662,9 @@
 - source: raw0/system-prompts/Junie/junie-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Junie
   target_file: raw0/system-prompts/Junie/junie-prompt-Unclassified.md
+- source: raw0/system-prompts/Kiro/Collaborate.md
+  target_dir: raw0/system-prompts/Kiro
+  target_file: raw0/system-prompts/Kiro/Collaborate.md
 - source: raw0/system-prompts/Kiro/Constraints.md
   target_dir: raw0/system-prompts/Kiro
   target_file: raw0/system-prompts/Kiro/Constraints.md
@@ -662,6 +716,9 @@
 - source: raw0/system-prompts/Lovable/lovable-agent-tools-Unclassified.md
   target_dir: raw0/system-prompts/Lovable
   target_file: raw0/system-prompts/Lovable/lovable-agent-tools-Unclassified.md
+- source: raw0/system-prompts/Lumo/Collaborate.md
+  target_dir: raw0/system-prompts/Lumo
+  target_file: raw0/system-prompts/Lumo/Collaborate.md
 - source: raw0/system-prompts/Lumo/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Lumo
   target_file: raw0/system-prompts/Lumo/Constraints-Confidential.md
@@ -674,12 +731,18 @@
 - source: raw0/system-prompts/Lumo/open-source-prompts-lumo-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Lumo
   target_file: raw0/system-prompts/Lumo/open-source-prompts-lumo-prompt-Unclassified.md
+- source: raw0/system-prompts/Malwarebytes/Collaborate.md
+  target_dir: raw0/system-prompts/Malwarebytes
+  target_file: raw0/system-prompts/Malwarebytes/Collaborate.md
 - source: raw0/system-prompts/Malwarebytes/ScamGuard.md
   target_dir: raw0/system-prompts/Malwarebytes
   target_file: raw0/system-prompts/Malwarebytes/ScamGuard.md
 - source: raw0/system-prompts/Malwarebytes/Tools.md
   target_dir: raw0/system-prompts/Malwarebytes
   target_file: raw0/system-prompts/Malwarebytes/Tools.md
+- source: raw0/system-prompts/Manus/Collaborate.md
+  target_dir: raw0/system-prompts/Manus
+  target_file: raw0/system-prompts/Manus/Collaborate.md
 - source: raw0/system-prompts/Manus/Constraints.md
   target_dir: raw0/system-prompts/Manus
   target_file: raw0/system-prompts/Manus/Constraints.md
@@ -710,6 +773,9 @@
 - source: raw0/system-prompts/Manus/manus-agent-tools-prompt-tools-Unclassified.md
   target_dir: raw0/system-prompts/Manus
   target_file: raw0/system-prompts/Manus/manus-agent-tools-prompt-tools-Unclassified.md
+- source: raw0/system-prompts/Meta/Collaborate.md
+  target_dir: raw0/system-prompts/Meta
+  target_file: raw0/system-prompts/Meta/Collaborate.md
 - source: raw0/system-prompts/Meta/Constraints.md
   target_dir: raw0/system-prompts/Meta
   target_file: raw0/system-prompts/Meta/Constraints.md
@@ -725,6 +791,9 @@
 - source: raw0/system-prompts/Microsoft/Bing-Chat.md
   target_dir: raw0/system-prompts/Microsoft
   target_file: raw0/system-prompts/Microsoft/Bing-Chat.md
+- source: raw0/system-prompts/Microsoft/Collaborate.md
+  target_dir: raw0/system-prompts/Microsoft
+  target_file: raw0/system-prompts/Microsoft/Collaborate.md
 - source: raw0/system-prompts/Microsoft/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Microsoft
   target_file: raw0/system-prompts/Microsoft/Constraints-Confidential.md
@@ -758,6 +827,9 @@
 - source: raw0/system-prompts/Microsoft/copilot-in-microsoft-word.md
   target_dir: raw0/system-prompts/Microsoft
   target_file: raw0/system-prompts/Microsoft/copilot-in-microsoft-word.md
+- source: raw0/system-prompts/Misc/Collaborate.md
+  target_dir: raw0/system-prompts/Misc
+  target_file: raw0/system-prompts/Misc/Collaborate.md
 - source: raw0/system-prompts/Misc/Confer.md
   target_dir: raw0/system-prompts/Misc
   target_file: raw0/system-prompts/Misc/Confer.md
@@ -806,6 +878,9 @@
 - source: raw0/system-prompts/Misc/t3.chat.md
   target_dir: raw0/system-prompts/Misc
   target_file: raw0/system-prompts/Misc/t3.chat.md
+- source: raw0/system-prompts/Mistral/Collaborate.md
+  target_dir: raw0/system-prompts/Mistral
+  target_file: raw0/system-prompts/Mistral/Collaborate.md
 - source: raw0/system-prompts/Mistral/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Mistral
   target_file: raw0/system-prompts/Mistral/Constraints-Confidential.md
@@ -818,6 +893,9 @@
 - source: raw0/system-prompts/Mistral/Le-Chat.md
   target_dir: raw0/system-prompts/Mistral
   target_file: raw0/system-prompts/Mistral/Le-Chat.md
+- source: raw0/system-prompts/Moonshot/Collaborate.md
+  target_dir: raw0/system-prompts/Moonshot
+  target_file: raw0/system-prompts/Moonshot/Collaborate.md
 - source: raw0/system-prompts/Moonshot/Constraints.md
   target_dir: raw0/system-prompts/Moonshot
   target_file: raw0/system-prompts/Moonshot/Constraints.md
@@ -827,6 +905,9 @@
 - source: raw0/system-prompts/Moonshot/Tools.md
   target_dir: raw0/system-prompts/Moonshot
   target_file: raw0/system-prompts/Moonshot/Tools.md
+- source: raw0/system-prompts/Notion/Collaborate.md
+  target_dir: raw0/system-prompts/Notion
+  target_file: raw0/system-prompts/Notion/Collaborate.md
 - source: raw0/system-prompts/Notion/Constraints.md
   target_dir: raw0/system-prompts/Notion
   target_file: raw0/system-prompts/Notion/Constraints.md
@@ -845,6 +926,9 @@
 - source: raw0/system-prompts/Notion/Tools.md
   target_dir: raw0/system-prompts/Notion
   target_file: raw0/system-prompts/Notion/Tools.md
+- source: raw0/system-prompts/Notionai/Collaborate.md
+  target_dir: raw0/system-prompts/Notionai
+  target_file: raw0/system-prompts/Notionai/Collaborate.md
 - source: raw0/system-prompts/Notionai/Constraints.md
   target_dir: raw0/system-prompts/Notionai
   target_file: raw0/system-prompts/Notionai/Constraints.md
@@ -917,6 +1001,9 @@
 - source: raw0/system-prompts/OpenAI/ChatGPT.md
   target_dir: raw0/system-prompts/OpenAI
   target_file: raw0/system-prompts/OpenAI/ChatGPT.md
+- source: raw0/system-prompts/OpenAI/Collaborate.md
+  target_dir: raw0/system-prompts/OpenAI
+  target_file: raw0/system-prompts/OpenAI/Collaborate.md
 - source: raw0/system-prompts/OpenAI/Constraints-Confidential.md
   target_dir: raw0/system-prompts/OpenAI
   target_file: raw0/system-prompts/OpenAI/Constraints-Confidential.md
@@ -1073,6 +1160,9 @@
 - source: raw0/system-prompts/OpenAI/tool-file_search.md
   target_dir: raw0/system-prompts/OpenAI
   target_file: raw0/system-prompts/OpenAI/tool-file_search.md
+- source: raw0/system-prompts/OpenAI/codex/Collaborate.md
+  target_dir: raw0/system-prompts/OpenAI/codex
+  target_file: raw0/system-prompts/OpenAI/codex/Collaborate.md
 - source: raw0/system-prompts/OpenAI/codex/Constraints.md
   target_dir: raw0/system-prompts/OpenAI/codex
   target_file: raw0/system-prompts/OpenAI/codex/Constraints.md
@@ -1091,6 +1181,9 @@
 - source: raw0/system-prompts/Opera/Constraints.md
   target_dir: raw0/system-prompts/Opera
   target_file: raw0/system-prompts/Opera/Constraints.md
+- source: raw0/system-prompts/Orchids/Collaborate.md
+  target_dir: raw0/system-prompts/Orchids
+  target_file: raw0/system-prompts/Orchids/Collaborate.md
 - source: raw0/system-prompts/Orchids/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Orchids
   target_file: raw0/system-prompts/Orchids/Constraints-Confidential.md
@@ -1163,6 +1256,9 @@
 - source: raw0/system-prompts/Phind/Phind.md
   target_dir: raw0/system-prompts/Phind
   target_file: raw0/system-prompts/Phind/Phind.md
+- source: raw0/system-prompts/Poke/Collaborate.md
+  target_dir: raw0/system-prompts/Poke
+  target_file: raw0/system-prompts/Poke/Collaborate.md
 - source: raw0/system-prompts/Poke/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Poke
   target_file: raw0/system-prompts/Poke/Constraints-Confidential.md
@@ -1196,6 +1292,9 @@
 - source: raw0/system-prompts/Poke/poke-poke_p6-Unclassified.md
   target_dir: raw0/system-prompts/Poke
   target_file: raw0/system-prompts/Poke/poke-poke_p6-Unclassified.md
+- source: raw0/system-prompts/Proton/Collaborate.md
+  target_dir: raw0/system-prompts/Proton
+  target_file: raw0/system-prompts/Proton/Collaborate.md
 - source: raw0/system-prompts/Proton/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Proton
   target_file: raw0/system-prompts/Proton/Constraints-Confidential.md
@@ -1217,6 +1316,9 @@
 - source: raw0/system-prompts/Proton/proton-lumo-ai.md
   target_dir: raw0/system-prompts/Proton
   target_file: raw0/system-prompts/Proton/proton-lumo-ai.md
+- source: raw0/system-prompts/Qoder/Collaborate.md
+  target_dir: raw0/system-prompts/Qoder
+  target_file: raw0/system-prompts/Qoder/Collaborate.md
 - source: raw0/system-prompts/Qoder/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Qoder
   target_file: raw0/system-prompts/Qoder/Constraints-Confidential.md
@@ -1259,6 +1361,9 @@
 - source: raw0/system-prompts/Replit/replit-tools-Unclassified.md
   target_dir: raw0/system-prompts/Replit
   target_file: raw0/system-prompts/Replit/replit-tools-Unclassified.md
+- source: raw0/system-prompts/Roblox/Collaborate.md
+  target_dir: raw0/system-prompts/Roblox
+  target_file: raw0/system-prompts/Roblox/Collaborate.md
 - source: raw0/system-prompts/Roblox/Constraints.md
   target_dir: raw0/system-prompts/Roblox
   target_file: raw0/system-prompts/Roblox/Constraints.md
@@ -1277,6 +1382,9 @@
 - source: raw0/system-prompts/Roocode/open-source-prompts-roocode-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Roocode
   target_file: raw0/system-prompts/Roocode/open-source-prompts-roocode-prompt-Unclassified.md
+- source: raw0/system-prompts/Same.dev/Collaborate.md
+  target_dir: raw0/system-prompts/Same.dev
+  target_file: raw0/system-prompts/Same.dev/Collaborate.md
 - source: raw0/system-prompts/Same.dev/Constraints.md
   target_dir: raw0/system-prompts/Same.dev
   target_file: raw0/system-prompts/Same.dev/Constraints.md
@@ -1301,6 +1409,9 @@
 - source: raw0/system-prompts/Snap/MyAI.md
   target_dir: raw0/system-prompts/Snap
   target_file: raw0/system-prompts/Snap/MyAI.md
+- source: raw0/system-prompts/Trae/Collaborate.md
+  target_dir: raw0/system-prompts/Trae
+  target_file: raw0/system-prompts/Trae/Collaborate.md
 - source: raw0/system-prompts/Trae/Constraints.md
   target_dir: raw0/system-prompts/Trae
   target_file: raw0/system-prompts/Trae/Constraints.md
@@ -1319,6 +1430,9 @@
 - source: raw0/system-prompts/Trae/trae-chat-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Trae
   target_file: raw0/system-prompts/Trae/trae-chat-prompt-Unclassified.md
+- source: raw0/system-prompts/Traycer/Collaborate.md
+  target_dir: raw0/system-prompts/Traycer
+  target_file: raw0/system-prompts/Traycer/Collaborate.md
 - source: raw0/system-prompts/Traycer/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Traycer
   target_file: raw0/system-prompts/Traycer/Constraints-Confidential.md
@@ -1346,6 +1460,9 @@
 - source: raw0/system-prompts/Traycer/traycer-ai-plan_mode_tools-Unclassified.md
   target_dir: raw0/system-prompts/Traycer
   target_file: raw0/system-prompts/Traycer/traycer-ai-plan_mode_tools-Unclassified.md
+- source: raw0/system-prompts/V0/Collaborate.md
+  target_dir: raw0/system-prompts/V0
+  target_file: raw0/system-prompts/V0/Collaborate.md
 - source: raw0/system-prompts/V0/Constraints-Confidential.md
   target_dir: raw0/system-prompts/V0
   target_file: raw0/system-prompts/V0/Constraints-Confidential.md
@@ -1379,6 +1496,9 @@
 - source: raw0/system-prompts/Vercel/v0.md
   target_dir: raw0/system-prompts/Vercel
   target_file: raw0/system-prompts/Vercel/v0.md
+- source: raw0/system-prompts/Vscode/Collaborate.md
+  target_dir: raw0/system-prompts/Vscode
+  target_file: raw0/system-prompts/Vscode/Collaborate.md
 - source: raw0/system-prompts/Vscode/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Vscode
   target_file: raw0/system-prompts/Vscode/Constraints-Confidential.md
@@ -1421,6 +1541,9 @@
 - source: raw0/system-prompts/Vscode/vscode-agent-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Vscode
   target_file: raw0/system-prompts/Vscode/vscode-agent-prompt-Unclassified.md
+- source: raw0/system-prompts/Warp.dev/Collaborate.md
+  target_dir: raw0/system-prompts/Warp.dev
+  target_file: raw0/system-prompts/Warp.dev/Collaborate.md
 - source: raw0/system-prompts/Warp.dev/Constraints.md
   target_dir: raw0/system-prompts/Warp.dev
   target_file: raw0/system-prompts/Warp.dev/Constraints.md
@@ -1457,6 +1580,9 @@
 - source: raw0/system-prompts/Windsurf/windsurf-tools-wave-11-Unclassified.md
   target_dir: raw0/system-prompts/Windsurf
   target_file: raw0/system-prompts/Windsurf/windsurf-tools-wave-11-Unclassified.md
+- source: raw0/system-prompts/Wrtn/Collaborate.md
+  target_dir: raw0/system-prompts/Wrtn
+  target_file: raw0/system-prompts/Wrtn/Collaborate.md
 - source: raw0/system-prompts/Wrtn/Constraints-Confidential.md
   target_dir: raw0/system-prompts/Wrtn
   target_file: raw0/system-prompts/Wrtn/Constraints-Confidential.md
@@ -1472,6 +1598,9 @@
 - source: raw0/system-prompts/Wrtn/Wrtn-GPT-3.5.md
   target_dir: raw0/system-prompts/Wrtn
   target_file: raw0/system-prompts/Wrtn/Wrtn-GPT-3.5.md
+- source: raw0/system-prompts/Xcode/Collaborate.md
+  target_dir: raw0/system-prompts/Xcode
+  target_file: raw0/system-prompts/Xcode/Collaborate.md
 - source: raw0/system-prompts/Xcode/Constraints.md
   target_dir: raw0/system-prompts/Xcode
   target_file: raw0/system-prompts/Xcode/Constraints.md
@@ -1514,6 +1643,9 @@
 - source: raw0/system-prompts/Z.ai/zai-code-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Z.ai
   target_file: raw0/system-prompts/Z.ai/zai-code-prompt-Unclassified.md
+- source: raw0/system-prompts/xAI/Collaborate.md
+  target_dir: raw0/system-prompts/xAI
+  target_file: raw0/system-prompts/xAI/Collaborate.md
 - source: raw0/system-prompts/xAI/Constraints-Confidential.md
   target_dir: raw0/system-prompts/xAI
   target_file: raw0/system-prompts/xAI/Constraints-Confidential.md

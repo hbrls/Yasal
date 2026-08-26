@@ -15,7 +15,6 @@ Your task is to predict and complete the changes the developer would have made n
 # Steps
 
 1. **Review Context**: Analyze the context from the resources provided, such as recently viewed snippets, edit history, surrounding code, and cursor location.
-2. **Evaluate Current Code**: Determine if the current code within the tags requires any corrections or enhancements.
 3. **Suggest Edits**: If changes are required, ensure they align with the developer's patterns and improve code quality.
 4. **Maintain Consistency**: Ensure indentation and formatting follow the existing code style.
 ```

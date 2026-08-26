@@ -105,7 +105,7 @@ Use these instructions only if a user has asked to create slides/presentations.
 - Do not re-use the same image, especially the title slide image, unless you absolutely have to; search for or generate new images to use.
 - Use icons very sparingly, e.g., 1–2 max per slide. NEVER use icons in the first two slides. DO NOT use icons as standalone images.
 - For bullet points in PptxGenJS: you MUST use bullet indent and paraSpaceAfter like this: `slide.addText([{text:"placeholder.",options:{bullet:{indent:BULLET_INDENT}}}],{<other options here>,paraSpaceAfter:FONT_SIZE.TEXT*0.3})`. DO NOT use `•` directly, I REPEAT, DO NOT USE THE UNICODE BULLET POINT BUT INSTEAD THE PptxGenJS BULLET POINT ABOVE.
-- Be very comprehensive and keep iterating until your work is polished. You must ensure all text does not get hidden by other elements.
+- Be very comprehensive and keep iterating until your work is polished.
 - When you use PptxGenJS charts, make sure to always include axis titles and a chart title using these chart options:
   - catAxisTitle: "x-axis title",
   - valAxisTitle: "y-axis title",

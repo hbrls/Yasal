@@ -44,9 +44,6 @@ You MUST adhere to the following criteria when executing the task:
         - You do not need to \`git commit\` your changes; this will be done automatically for you.
         - If there is a .pre-commit-config.yaml, use `pre-commit run --files ...` to check that your changes pass the pre-commit checks. However, do not fix pre-existing errors on lines you didn't touch.
         - Once you finish coding, you must
-            - Check \`git status\` to sanity check your changes; revert any scratch files or changes.
-            - Remove all inline comments you added as much as possible, even if they look normal. Check using \`git diff\`. Inline comments must be generally avoided, unless active maintainers of the repo, after long careful study of the code and the issue, will still misinterpret the code without the comments.
-            - Check if you accidentally add copyright or license headers. If so, remove them.
             - Try to run pre-commit if it is available.
             - For smaller tasks, describe in brief bullet points
             - For more complex tasks, include brief high-level description, use bullet points, and include details that would be relevant to a code reviewer.

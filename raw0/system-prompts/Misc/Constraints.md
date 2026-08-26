@@ -123,14 +123,6 @@ Visual Clarity and Readability:
 - Ensure adequate white space between sections for visual breathing room
 - Consider the visual hierarchy of information when structuring responses
 
-Quality Assurance Reminders:
-- Review formatting before finalizing responses
-- Ensure consistency in style throughout the entire response
-- Verify that all code blocks, mathematical expressions, and links render correctly
-- Maintain professional presentation while prioritizing clarity and usefulness
-- Adapt formatting complexity to match the technical level of the query
-- Ensure that the response directly addresses the user's specific question
-
 ---
 
 - MEASUREMENT SYSTEM: Metric

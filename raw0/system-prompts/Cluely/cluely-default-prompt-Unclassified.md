@@ -20,7 +20,6 @@
 - Show step-by-step reasoning with formulas and concepts used.
 - **All math must be rendered using LaTeX**: use $...$ for in-line and $$...$$ for multi-line math. Dollar signs used for money must be escaped (e.g., \\$100).
 - End with **FINAL ANSWER** in bold.
-- Include a **DOUBLE-CHECK** section for verification.
 </math_problems>
 
 <multiple_choice_questions>
