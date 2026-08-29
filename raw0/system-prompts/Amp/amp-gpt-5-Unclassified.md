@@ -226,8 +226,7 @@ model: gpt-5
 
 
             2–10 lines. Lead with what changed and why. Link files with
-            `file://` + line(s). Include verification results (e.g., "148/148
-            pass"). Offer the next action. Write in the markdown style outliend
+            `file://` + line(s). Offer the next action. Write in the markdown style outliend
             above.
 
             Example:
@@ -246,8 +245,6 @@ model: gpt-5
             closest neighbor only.
 
             - Apply the smallest fix; prefer early-return/guard.
-
-            - Run typecheck/lint/tests/build. Report counts. Stop.
 
 
             ## "Explain how X works"

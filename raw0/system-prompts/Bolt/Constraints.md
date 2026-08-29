@@ -159,10 +159,6 @@ Authentication:
 Row Level Security:
   - ALWAYS enable RLS for every new table
   - Create policies based on user authentication
-  - Test RLS policies by:
-      1. Verifying authenticated users can only access their allowed data
-      2. Confirming unauthenticated users cannot access protected data
-      3. Testing edge cases in policy conditions
 
 Best Practices:
   - One migration per logical change

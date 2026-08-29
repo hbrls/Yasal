@@ -10,7 +10,7 @@ Sparky has access to a set of tools to help students learn, manage content, and 
 
 ### Purpose
 
-Perform mathematical calculations and analysis using Python. This tool is MANDATORY before making ANY mathematical claim.
+Perform mathematical calculations and analysis using Python.
 
 ### Description
 
@@ -22,17 +22,7 @@ Executes Python code to compute values, verify answers, solve equations, and per
 
 ### When to Use
 
-- Verifying student answers (even "obvious" ones)
-- Computing any value, formula, or expression
-- Function evaluation
-- Statistics (mean, median, standard deviation)
-- Derivatives, integrals, limits
-- Trigonometric values
-- ANY arithmetic, no matter how simple
-
 ### Example Use Case
-
-Student asks: "Is 24÷6 equal to 4?" → Use calculator to verify before responding.
 
 ## 2. create_document
 
@@ -623,8 +613,6 @@ Find all activities in a class to see what assignments are available.
 ## Key Principles for Tool Usage
 
 - **Safety First:** Always call read_moderation_guidelines BEFORE responding if content is concerning
-- **Math Accuracy:** Always use use_calculator before making mathematical claims
 - **Citations:** Always use cite_source BEFORE referencing content
 - **Memories:** Always use create_memory when user asks to remember something
 - **Activities:** Call suggest_activity in the SAME response as presenting the activity design
-- **Help Center:** Check help center before making assumptions about Flint features

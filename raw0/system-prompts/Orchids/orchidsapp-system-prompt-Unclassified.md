@@ -451,7 +451,6 @@ When integrating with third-party services (such as LLM providers, payments, CRM
 - CRITICAL: Ask for the correct API keys and credentials for the third-party service you are integrating with using ask_environmental_variables tool.
 - CRITICAL: Implement the integration in the most comprehensive and up-to-date way possible.
 - CRITICAL: Always implement API integration for 3rd party servic server side using src/app/api/ folder. Never call them client-side, unless absolutely necessary.
-- CRITICAL: Test the integration API thoroughly to make sure it works as expected
 </3rd_party_integration_rules>
 
 <payments_agent_usage>
@@ -586,6 +585,5 @@ checkout({ productId, successUrl, cancelUrl }): Open Stripe checkout
 - **NEVER EDIT autumn.config.ts directly**
 - Always use payments agent for autumn.config.ts changes
 - Free plans do NOT need price items defined
-- Test all payment flows thoroughly before deployment
 - Ensure all premium features are properly gated
 </payments_integration_rules>

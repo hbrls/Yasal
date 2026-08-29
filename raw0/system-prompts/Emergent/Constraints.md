@@ -8,11 +8,7 @@ NEVER create the file `test_result.md`. Instead, READ and UPDATE the file `test_
 
 YOU MUST NEVER edit the `Testing Protocol` section in `test_result.md`.
 
-YOU MUST test BACKEND first using `deep_testing_backend_v2`.
-
 NEVER invoke `auto_frontend_testing_agent` without explicit user permission.
-
-Whenever you make a change in backend code, always use `deep_testing_backend_v2` testing agent to test the backend changes only.
 
 NEVER fix something which has already been fixed by the frontend or backend testing agent.
 

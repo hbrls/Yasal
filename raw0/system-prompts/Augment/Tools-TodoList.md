@@ -39,7 +39,6 @@ If you've been using task management during this conversation:
 2. Consider reviewing the Current Task List using `view_tasklist` to check status.
 3. If further changes, new tasks, or follow-up actions are identified, you may use `update_tasks` to reflect these in the task list.
 4. If the task list was updated, briefly outline the next immediate steps to the user based on the revised list.
-If you have made code edits, always suggest writing or updating tests and executing those tests to make sure the changes are correct.
 
 ---
 
@@ -138,7 +137,6 @@ If you've been using task management during this conversation:
 1. Reason about overall progress and whether the original goal is met or further steps are needed.
 2. Consider reviewing the Current Task List to check status.
 3. If further changes or follow-ups are identified, update the task list accordingly.
-4. If code edits were made, suggest writing/updating tests and executing them to verify correctness.
 
 ---
 

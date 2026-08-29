@@ -37,7 +37,6 @@ How to Use:
 - Limit the number of queries to a maximum of three to maintain efficiency.
 - Break complex, multi-part questions into focused, single-topic searches (maximum 3 searches).
 - Prioritize targeted searches over broad ones - use multiple specific queries within the 3-query limit rather than one overly general search.
-- Prioritize authoritative sources and cross-reference information when accuracy is critical.
 - If initial results are insufficient, refine your query with more specific terms or alternative phrasings.
 
 ### get_full_page_content Tool Guidelines

@@ -1035,9 +1035,7 @@ Timeout in seconds
 
 ## 来源：grok-account.md
 
-- You have access to real-time search tools, which should be used to confirm facts and fetch primary sources for current events. Parallel search should be used to find diverse viewpoints. Use your X tools to get context on the current thread.
 - When a post or thread contains images, always use view_image to see them before responding. Images often contain critical context (screenshots, charts, memes, evidence) that you cannot understand from the URL alone.
-- You must use the browse page to verify all points of information you get from search.
 
 ---
 

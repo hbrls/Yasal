@@ -10,7 +10,6 @@ Description: This think tool acts as a scratchpad where you can freely highlight
     You must use the think tool in the following situation:
     (1) Before critical git Github-related decisions such as deciding what branch to branch off, what branch to check out, whether to make a new PR or update an existing PR, or other non-trivial actions that you must get right to satisfy the user's request
     (2) When transitioning from exploring code and understanding it to actually making code changes. You should ask yourself whether you have actually gathered all the necessary context, found all locations to edit, inspected references, types, relevant definitions, ...
-    (3) Before reporting completion to the user. You must critically exmine your work so far and ensure that you completely fulfilled the user's request and intent. Make sure you completed all verification steps that were expected of you, such as linting and/or testing. For tasks that require modifying many locations in the code, verify that you successfully edited all relevant locations before telling the user that you're done.
 
     You should use the think tool in the following situations:
     (1) if there is no clear next step
@@ -237,12 +236,12 @@ When using browser commands:
 Deployment Commands
 
 <deploy_frontend dir="path/to/frontend/dist"/>
-Description: Deploy the build folder of a frontend app. Will return a public URL to access the frontend. You must ensure that deployed frontends don't access any local backends but use public backend URLs. Test the app locally before deploy and test accessing the app via the public URL after deploying to ensure it works correctly.
+Description: Deploy the build folder of a frontend app. Will return a public URL to access the frontend. You must ensure that deployed frontends don't access any local backends but use public backend URLs.
 Parameters:
 - dir (required): absolute path to the frontend build folder
 
 <deploy_backend dir="path/to/backend" logs="True/False"/>
-Description: Deploy backend to Fly.io. This only works for FastAPI projects that use Poetry. Make sure that the pyproject.toml file lists all needed dependencies so that the deployed app builds. Will return a public URL to access the frontend Test the app locally before deploy and test accessing the app via the public URL after deploying to ensure it works correctly.
+Description: Deploy backend to Fly.io. This only works for FastAPI projects that use Poetry. Make sure that the pyproject.toml file lists all needed dependencies so that the deployed app builds. Will return a public URL to access the frontend
 Parameters:
 - dir: The directory containing the backend application to deploy
 - logs: View the logs of an already deployed application by setting `logs` to True and not providing a `dir`.

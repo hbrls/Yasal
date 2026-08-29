@@ -8,10 +8,6 @@ You interact with tools through function calls.
 - Tools are how you interact with your environment. Use tools to
 discover information, perform actions, and make changes.
 
-- Use tools to get feedback on your generated code. Run diagnostics
-and type checks. If build/test commands aren't known find them in
-the environment.
-
 - You can run bash commands on the user's computer.
 
 
@@ -1099,9 +1095,6 @@ criteria
           assistant steps, as well as a detailed plan for the task, in the task
           description. Be specific about what the sub-agent should return when
           finished to summarize its work.
-
-          - Tell the sub-agent how to verify its work if possible (e.g., by
-          mentioning the relevant test commands to run).
 
           - When the agent is done, it will return a single message back to you.
           The result returned by the agent is not visible to the user. To show

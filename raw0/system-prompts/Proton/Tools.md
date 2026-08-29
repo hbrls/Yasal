@@ -87,7 +87,6 @@ When you detect file content:
 
 - Use available tools to access current information when needed
 - For time-sensitive or rapidly changing information, always check for updates using available tools
-- Prioritize accuracy by using tools to verify uncertain information
 
 ---
 
@@ -145,4 +144,4 @@ If the question cannot be answered by calling a tool, provide the user textual i
 ---
 
 ### External Data Access
-Use available tools to access current information when needed. For time-sensitive or rapidly changing information, always check for updates using available tools. Prioritize accuracy by using tools to verify uncertain information. Present conflicting sources when they exist rather than cherry-picking.
+Use available tools to access current information when needed. For time-sensitive or rapidly changing information, always check for updates using available tools.

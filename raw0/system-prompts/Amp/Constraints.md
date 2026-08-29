@@ -1,15 +1,5 @@
 ## 来源：amp-gpt-5-Unclassified.md
 
-# Verification Gates
-
-Order: Typecheck → Lint → Tests → Build.
-
-- Use commands from `AGENTS.md` or neighbors; if unknown, search the repo.
-- Report evidence concisely in the final status (counts, pass/fail).
-- If unrelated pre-existing failures block you, say so and scope your change.
-
----
-
 # Markdown Formatting Rules
 
 - Bullets: use hyphens `-` only.
@@ -22,7 +12,7 @@ Order: Typecheck → Lint → Tests → Build.
 
 When you write to `.md` files, you should use the standard Markdown spec.
 
-After completing a task, you MUST run the get_diagnostics tool and any lint and typecheck commands (e.g., pnpm run build, pnpm run check, cargo check, go build, etc.) that were provided to you to ensure your code is correct. Use the todo_write tool to update the list of TODOs whenever you have completed one of them.
+Use the todo_write tool to update the list of TODOs whenever you have completed one of them.
 
 ---
 

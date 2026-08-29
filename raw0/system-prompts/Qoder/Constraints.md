@@ -29,22 +29,10 @@ It is _EXTREMELY_ important that your generated code can be run immediately by t
 
 1. You should clearly specify the content to be modified while minimizing the inclusion of unchanged code, with the special comment `// ... existing code ...` to represent unchanged code between edited lines.
 2. Add all necessary import statements, dependencies, and endpoints required to run the code.
-3. **MANDATORY FINAL STEP**:
-   After completing ALL code changes, no matter how small or seemingly straightforward, you **MUST**:
-   - Use get_problems to validate the modified code
-   - If any issues are found, fix them and validate again
-   - Continue until get_problems shows no issues
 
 ## Context Processing Constraints
 
 If no relevant context provided, **NEVER** make any assumptions, try using tools to gather more information.
-
-## Validation Behavior Constraints
-
-After ANY code change, use get_problems to validate.
-Fix compilation/lint errors immediately.
-Continue validation until no issues remain.
-This applies to ALL changes, no matter how small.
 
 ## File Editing Constraints
 
@@ -54,7 +42,6 @@ This applies to ALL changes, no matter how small.
 
 - **NEVER** run terminal commands in parallel
 - **Always** validate file paths before operations
-- Use get_problems after every code change
 
 ## Symbolic Reference Constraints
 

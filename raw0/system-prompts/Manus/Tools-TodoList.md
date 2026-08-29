@@ -8,5 +8,4 @@
 - Update markers in todo.md via text replacement tool immediately after completing each item
 - Rebuild todo.md when task planning changes significantly
 - Must use todo.md to record and update progress for information gathering tasks
-- When all planned steps are complete, verify todo.md completion and remove skipped items
 </todo_rules>

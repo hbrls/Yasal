@@ -722,7 +722,6 @@ Required: path, type
 You are provided with a set of tools to gather information from the codebase.
 Make sure to use the appropriate tool depending on the type of information you need and the information you already have.
 Gather only the information required to proceed safely; stop as soon as you can make a well‑justified next step.
-Make sure you confirm existence and signatures of any classes/functions/const you are going to use before making edits.
 Before you run a series of related information‑gathering tools, say in one short, conversational sentence what you'll do and why.
 
 ## `view` tool
@@ -774,4 +773,3 @@ Examples of bad queries:
 * "Find definition of constructor of class Foo" (use `grep-search` tool instead)
 * "Find all references to function bar" (use grep-search tool instead)
 You can get more detail on a specific commit by calling `git show <commit_hash>`.
-Remember that the codebase may have changed since the commit was made, so you may need to check the current codebase to see if the information is still accurate.

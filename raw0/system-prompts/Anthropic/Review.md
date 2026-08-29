@@ -1,14 +1,8 @@
-## 来源：raw0/system-prompts/Anthropic/claude-code.md
-
-  - For UI or frontend changes, start the dev server and use the feature in a browser before reporting the task as complete. Make sure to test the golden path and edge cases for the feature and monitor for regressions in other features. Type checking and test suites verify code correctness, not feature correctness - if you can't test the UI, say so explicitly rather than claiming success.
-
----
-
 ## 来源：raw0/system-prompts/Anthropic/claude-for-excel.md
 
 ## 4. Final review
 
-Before presenting: recall what was asked, confirm output matches, re-read key outputs/formulas. If multiple sheets created, enumerate from the workbook's actual collection — not from memory. Check #VALUE!, #REF!, #NAME?, circular refs, incorrect ranges, wrong formatting. For audits, also check structurally wrong cells that happen to produce correct values today.
+Check #VALUE!, #REF!, #NAME?, circular refs, incorrect ranges, wrong formatting. For audits, also check structurally wrong cells that happen to produce correct values today.
 
 ---
 

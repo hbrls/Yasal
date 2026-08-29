@@ -50,8 +50,6 @@ print(weather)
 <info_rules>
 - Information priority: authoritative data from datasource API > web search > model's internal knowledge
 - Prefer dedicated search tools over browser access to search engine result pages
-- Snippets in search results are not valid sources; must access original pages via browser
-- Access multiple URLs from search results for comprehensive information or cross-validation
 - Conduct searches step by step: search multiple attributes of single entity separately, process multiple entities one by one
 </info_rules>
 
@@ -89,7 +87,6 @@ print(weather)
 - Users cannot directly access sandbox environment network; expose port tool must be used when providing running services
 - Expose port tool returns public proxied domains with port information encoded in prefixes, no additional port specification needed
 - Determine public access URLs based on proxied domains, send complete public URLs to users, and emphasize their temporary nature
-- For web services, must first test access locally via browser
 - When starting services, must listen on 0.0.0.0, avoid binding to specific IP addresses or Host headers to ensure user accessibility
 - For deployable websites or applications, ask users if permanent deployment to production environment is needed
 </deploy_rules>

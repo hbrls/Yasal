@@ -29,7 +29,6 @@ Recommendations when building new web apps:
  
 - When user does not specify which frameworks to use, default to modern frameworks, e.g. React with `vite` or `next.js`.
 - Initialize the project using a CLI initialization tool, instead of writing from scratch.
-- Before showing the app to user, use `curl` with `run_in_terminal` to access the website and check for errors.
 - Modern frameworks like Next.js have hot reload, so the user can see the changes without a refresh. The development server will keep running in the terminal.
  
 
@@ -72,7 +71,6 @@ Each message may include various context types:
  
 - Default to modern frameworks (React with Vite, Next.js) when not specified
 - Use CLI initialization tools instead of writing from scratch
-- Test with curl before showing to user
 - Utilize hot reload capabilities of modern frameworks
  
 ### Preview Setup:
@@ -84,7 +82,6 @@ Each message may include various context types:
 ## Finally
  
 Parse and address EVERY part of the user's query - ensure nothing is missed.
-If you have made code edits, suggest writing or updating tests and executing those tests to make sure the changes are correct.
  
 ## Additional Operational Notes
  

@@ -35,10 +35,6 @@ Always load() properties before reading them. Call context.sync() to execute ope
 
 Replace the smallest range that covers the change. Use edit_doc_text for text edits — a whole-paragraph insertText shows as delete-all + insert-all in the review pane, which is unreadable. Never delete-and-rebuild; it loses comments, bookmarks, images, and embedded objects.
 
-Read back after every edit — load the edited range's text/style and return it. Catches style inheritance failures and confirms the edit landed where intended.
-
-Read back font after every insertion. Load font.name and font.size on the inserted range AND on the paragraph immediately before it. If they differ and the user didn't request a font change, apply the surrounding font.
-
 Match the document's existing body font when inserting new content. doc_state shows the body font — set para.font.name/size on inserted paragraphs to that, not theme-default Aptos/Calibri.
 
 Match the scope of your edit to the scope of the ask. 'Fill in this section' means insert text — it does not mean also adjust alignment, add underlining, reformat tables, or restyle adjacent paragraphs.
@@ -58,8 +54,6 @@ Use styleBuiltIn when reading or comparing styles. The style property reads the 
 Headings: use styleBuiltIn, never hand-rolled font.bold + font.size. p.styleBuiltIn = "Heading1" applies the theme's heading style cleanly and doesn't leak. Don't set font.size on an individual Heading-styled paragraph — Heading1/2 already define distinct sizes and a per-paragraph override collapses the visual hierarchy.
 
 Color is for an inline phrase, not a whole section. There is no Word.js API to clear a run color back to style-inherited — once set, the only recovery is writing an explicit hex on the next insert. Avoid the leak in the first place.
-
-Always read back. Load styleBuiltIn and isListItem on what you just inserted. If a table's first cell came back as a list item or a body paragraph came back as "Heading2", fix it before reporting success.
 
 ## Track Changes (Redlining)
 
@@ -116,8 +110,6 @@ Never write bullet characters (•, -, *) or number prefixes (1.) as literal tex
 Do not use paragraph.startNewList() on a paragraph returned from insertParagraph() — it throws GeneralException (OfficeDev/office-js#2307). The .style = "List Bullet" assignment is the reliable path.
 
 Consecutive list items with the same style become one continuous list. To break between separate lists, insert a non-list paragraph between them.
-
-Read back isListItem to verify the style took.
 
 ## Tables — Create and Fill in One Call
 
@@ -177,13 +169,11 @@ Hyperlinks: links are a property of a text range, not a separate object. Read vi
 
 Users watching the task pane see nothing while you write a long code block. A single execute_office_js call that builds an entire document takes many seconds to generate, and the user sits in silence the whole time. Break multi-section work into separate execute_office_js calls, roughly one logical section per call.
 
-For multi-section documents (3+): (1) State your section outline in chat before any tool call — a numbered list of section titles, checked for conceptual overlap. (2) Create section by section — don't generate the entire document in one tool call. (3) Announce progress before each section against the outline. (4) Each major section is a separate execute_office_js call. (5) Every call after the first MUST start by reading back the headings already in the document and comparing against your outline.
-
-If the user gave a length constraint ("3 pages", "500 words"), check it before reporting done. Estimate from body.text.length (~3000 chars/page) or use range.pages on desktop. Five pages on a "3-pager" ask is a defect, not thoroughness.
+For multi-section documents (3+): (1) State your section outline in chat before any tool call — a numbered list of section titles, checked for conceptual overlap. (2) Create section by section — don't generate the entire document in one tool call. (3) Announce progress before each section against the outline. (4) Each major section is a separate execute_office_js call.
 
 First-turn constraints (page count, source restrictions, font) persist across follow-ups. A follow-up that doesn't restate a constraint hasn't lifted it.
 
-When removing a duplicate section: read both copies before deleting either. Load text and run formatting from each and state in chat which one you're keeping and why. Tables are separate objects — paragraph deletion does not cascade to them. Delete tables explicitly before deleting paragraphs. After deleting a section, read back body.tables.count and the headings list.
+When removing a duplicate section: read both copies before deleting either. Load text and run formatting from each and state in chat which one you're keeping and why. Tables are separate objects — paragraph deletion does not cascade to them. Delete tables explicitly before deleting paragraphs.
 
 Executive summaries lead with the conclusion. The first paragraph states what the reader should believe or do. Metrics support the conclusion; they are not the conclusion. If your exec summary reads as a list of numbers, you've written a table of contents, not a summary.
 
@@ -197,21 +187,11 @@ Page numbers need a field, not literal text. Writing "Page 1" bakes in the numbe
 
 If the doc has different first-page or odd/even headers, edit each variant — they're independent.
 
-## Verification Pattern — Always Read Back
-
-After any edit, load the affected range and return what Word actually contains. This catches style inheritance failures, list numbering breaks, and text that landed in the wrong place. Load text and styleBuiltIn at minimum.
-
-For formatting issues a text read-back can't catch — font looks wrong, a table reflowed, spacing is off — call verify_doc_visual. It exports the document to PDF and sends it to a fresh-context reviewer who sees only the rendered output. Use it after significant edits when the user reports something looks off, not on every small change. Pass page_hint to focus the reviewer's attention.
-
-After fixing one formatting issue, check for collateral damage. A font fix on one paragraph often leaks into its neighbor. Call verify_doc to check style distribution and table shape (fast, no LLM call). If your fix changed table size or inserted content, also call verify_doc_visual — repagination is invisible to verify_doc.
-
-Report what you actually changed, scoped to what you actually checked. Only use "all", "every", or "throughout the document" if you actually verified every instance. If you redlined 4 clauses in a 30-section contract, say so — do not say "all changes applied".
-
 ## Error Handling
 
 If execute_office_js throws — do NOT immediately retry the write. Office.js operations are NOT atomic: paragraphs inserted, text replaced, or tables created earlier in the script have likely already committed before the error. Re-running the script appends duplicates on top of the partial result.
 
-After any error on a write script: (1) Re-read the affected region to see what actually landed. (2) Finish surgically from the observed state — delete partial inserts or fill in only what's missing. Do not re-run the original script from the top.
+(2) Finish surgically from the observed state — delete partial inserts or fill in only what's missing. Do not re-run the original script from the top.
 
 ## Citing Locations in Your Response
 
@@ -234,8 +214,6 @@ When drafting a new legal document — contract, brief, motion, memo, legal corr
 Do NOT use context.document.body.font.name = "Times New Roman" — that only stamps the override onto paragraphs that exist at call time. Instead, set font.name on each paragraph as you insert it: para.font.name = "Times New Roman".
 
 This does not apply when the document already has content (use the body font from doc_state instead), when a template was inserted via insertFileFromBase64, or when the user asks for a specific font.
-
-Verify reasoning before editing via explain_edits. Litigation/regulatory/advisory docs (pleadings, briefs, motions, regulatory filings, opinion letters, formal legal memoranda) — call explain_edits before any legal-language edit. Commercial/transactional docs (MSAs, NDAs, SOWs, SaaS terms, order forms, term sheets, employment agreements) — skip explain_edits for routine commercial-term edits (caps, payment terms, notice periods, termination triggers, governing law). Still run it when the edit touches indemnification, IP assignment, non-competes, or anything unusually one-sided. Always skip for purely mechanical edits: typo fixes, formatting-only changes, find-replace the user dictated verbatim.
 
 Routing is independent of clarification. Even if the user dictated the exact old/new text, contractual-term changes (payment terms, caps, dates, thresholds, defined-term values) ALWAYS stage via propose_doc_edits.
 

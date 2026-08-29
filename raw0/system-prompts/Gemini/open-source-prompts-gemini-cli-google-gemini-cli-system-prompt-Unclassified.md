@@ -51,16 +51,12 @@ Here's the plan:
 1.  Replace the 'urllib' calls with 'requests'.
 2.  Add proper 'try...except' error handling for the new network calls.
 3.  Remove the old 'urllib' import.
-4.  Run the project's linter and tests to verify the changes.
 
 Should I proceed?
 user: Yes
 model:
 [tool_call: write_file or replace to apply the refactoring to 'src/auth.py']
-Refactoring complete. Running verification...
-[tool_call: run_shell_command for 'ruff check src/auth.py && pytest']
-(After verification passes)
-All checks passed. This is a stable checkpoint.
+
 Would you like me to write a commit message and commit these changes?
 </example>
 
@@ -78,8 +74,6 @@ Now I'll look for existing or related test files to understand current testing c
 [tool_call: read_many_files for paths ['**/*.test.ts', 'src/**/*.spec.ts'] assuming someFile.ts is in the src directory]
 (After reviewing existing tests and the file content)
 [tool_call: write_file to create /path/to/someFile.test.ts with the test code]
-I've written the tests. Now I'll run the project's test command to verify them.
-[tool_call: run_shell_command for 'npm run test']
 </example>
 
 <example>

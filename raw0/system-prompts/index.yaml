@@ -2,12 +2,18 @@
 - source: raw0/system-prompts/Collaborate.md
   target_dir: raw0/system-prompts
   target_file: raw0/system-prompts/Collaborate.md
+- source: raw0/system-prompts/Review.md
+  target_dir: raw0/system-prompts
+  target_file: raw0/system-prompts/Review.md
 - source: raw0/system-prompts/Amp/Constraints.md
   target_dir: raw0/system-prompts/Amp
   target_file: raw0/system-prompts/Amp/Constraints.md
 - source: raw0/system-prompts/Amp/Expert.md
   target_dir: raw0/system-prompts/Amp
   target_file: raw0/system-prompts/Amp/Expert.md
+- source: raw0/system-prompts/Amp/Review.md
+  target_dir: raw0/system-prompts/Amp
+  target_file: raw0/system-prompts/Amp/Review.md
 - source: raw0/system-prompts/Amp/Rules.md
   target_dir: raw0/system-prompts/Amp
   target_file: raw0/system-prompts/Amp/Rules.md
@@ -50,6 +56,9 @@
 - source: raw0/system-prompts/Anthropic/Official-claude-sonnet-4.6.md
   target_dir: raw0/system-prompts/Anthropic
   target_file: raw0/system-prompts/Anthropic/Official-claude-sonnet-4.6.md
+- source: raw0/system-prompts/Anthropic/Review.md
+  target_dir: raw0/system-prompts/Anthropic
+  target_file: raw0/system-prompts/Anthropic/Review.md
 - source: raw0/system-prompts/Anthropic/Rules.md
   target_dir: raw0/system-prompts/Anthropic
   target_file: raw0/system-prompts/Anthropic/Rules.md
@@ -155,6 +164,9 @@
 - source: raw0/system-prompts/Atlassian/Constraints.md
   target_dir: raw0/system-prompts/Atlassian
   target_file: raw0/system-prompts/Atlassian/Constraints.md
+- source: raw0/system-prompts/Atlassian/Review.md
+  target_dir: raw0/system-prompts/Atlassian
+  target_file: raw0/system-prompts/Atlassian/Review.md
 - source: raw0/system-prompts/Atlassian/Rovo.md
   target_dir: raw0/system-prompts/Atlassian
   target_file: raw0/system-prompts/Atlassian/Rovo.md
@@ -320,6 +332,9 @@
 - source: raw0/system-prompts/Claude/Expert.md
   target_dir: raw0/system-prompts/Claude
   target_file: raw0/system-prompts/Claude/Expert.md
+- source: raw0/system-prompts/Claude/Review.md
+  target_dir: raw0/system-prompts/Claude
+  target_file: raw0/system-prompts/Claude/Review.md
 - source: raw0/system-prompts/Claude/Tools-TodoList.md
   target_dir: raw0/system-prompts/Claude
   target_file: raw0/system-prompts/Claude/Tools-TodoList.md
@@ -356,6 +371,9 @@
 - source: raw0/system-prompts/Cluely/Expert.md
   target_dir: raw0/system-prompts/Cluely
   target_file: raw0/system-prompts/Cluely/Expert.md
+- source: raw0/system-prompts/Cluely/Review.md
+  target_dir: raw0/system-prompts/Cluely
+  target_file: raw0/system-prompts/Cluely/Review.md
 - source: raw0/system-prompts/Cluely/Rules.md
   target_dir: raw0/system-prompts/Cluely
   target_file: raw0/system-prompts/Cluely/Rules.md
@@ -395,6 +413,9 @@
 - source: raw0/system-prompts/Codex/Constraints.md
   target_dir: raw0/system-prompts/Codex
   target_file: raw0/system-prompts/Codex/Constraints.md
+- source: raw0/system-prompts/Codex/Review.md
+  target_dir: raw0/system-prompts/Codex
+  target_file: raw0/system-prompts/Codex/Review.md
 - source: raw0/system-prompts/Codex/Tools-TodoList.md
   target_dir: raw0/system-prompts/Codex
   target_file: raw0/system-prompts/Codex/Tools-TodoList.md
@@ -563,6 +584,9 @@
 - source: raw0/system-prompts/Emergent/Expert.md
   target_dir: raw0/system-prompts/Emergent
   target_file: raw0/system-prompts/Emergent/Expert.md
+- source: raw0/system-prompts/Emergent/Review.md
+  target_dir: raw0/system-prompts/Emergent
+  target_file: raw0/system-prompts/Emergent/Review.md
 - source: raw0/system-prompts/Emergent/emergent-prompt-Unclassified.md
   target_dir: raw0/system-prompts/Emergent
   target_file: raw0/system-prompts/Emergent/emergent-prompt-Unclassified.md
@@ -614,6 +638,9 @@
 - source: raw0/system-prompts/Google/NotebookLM-chat.md
   target_dir: raw0/system-prompts/Google
   target_file: raw0/system-prompts/Google/NotebookLM-chat.md
+- source: raw0/system-prompts/Google/Review.md
+  target_dir: raw0/system-prompts/Google
+  target_file: raw0/system-prompts/Google/Review.md
 - source: raw0/system-prompts/Google/Stitch.md
   target_dir: raw0/system-prompts/Google
   target_file: raw0/system-prompts/Google/Stitch.md
@@ -671,6 +698,9 @@
 - source: raw0/system-prompts/Kiro/Expert.md
   target_dir: raw0/system-prompts/Kiro
   target_file: raw0/system-prompts/Kiro/Expert.md
+- source: raw0/system-prompts/Kiro/Review.md
+  target_dir: raw0/system-prompts/Kiro
+  target_file: raw0/system-prompts/Kiro/Review.md
 - source: raw0/system-prompts/Kiro/Rules.md
   target_dir: raw0/system-prompts/Kiro
   target_file: raw0/system-prompts/Kiro/Rules.md
@@ -758,6 +788,9 @@
 - source: raw0/system-prompts/Manus/Manus-Agent-Tools-Prompt-Prompt-Unclassified.md
   target_dir: raw0/system-prompts/Manus
   target_file: raw0/system-prompts/Manus/Manus-Agent-Tools-Prompt-Prompt-Unclassified.md
+- source: raw0/system-prompts/Manus/Review.md
+  target_dir: raw0/system-prompts/Manus
+  target_file: raw0/system-prompts/Manus/Review.md
 - source: raw0/system-prompts/Manus/Rules.md
   target_dir: raw0/system-prompts/Manus
   target_file: raw0/system-prompts/Manus/Rules.md
@@ -821,6 +854,9 @@
 - source: raw0/system-prompts/Microsoft/GitHub-Copilot-Commit-Title-Generator.md
   target_dir: raw0/system-prompts/Microsoft
   target_file: raw0/system-prompts/Microsoft/GitHub-Copilot-Commit-Title-Generator.md
+- source: raw0/system-prompts/Microsoft/Review.md
+  target_dir: raw0/system-prompts/Microsoft
+  target_file: raw0/system-prompts/Microsoft/Review.md
 - source: raw0/system-prompts/Microsoft/Tools.md
   target_dir: raw0/system-prompts/Microsoft
   target_file: raw0/system-prompts/Microsoft/Tools.md
@@ -848,6 +884,9 @@
 - source: raw0/system-prompts/Misc/Kagi Assistant.md
   target_dir: raw0/system-prompts/Misc
   target_file: raw0/system-prompts/Misc/Kagi Assistant.md
+- source: raw0/system-prompts/Misc/Review.md
+  target_dir: raw0/system-prompts/Misc
+  target_file: raw0/system-prompts/Misc/Review.md
 - source: raw0/system-prompts/Misc/Rules.md
   target_dir: raw0/system-prompts/Misc
   target_file: raw0/system-prompts/Misc/Rules.md
@@ -1040,6 +1079,9 @@
 - source: raw0/system-prompts/OpenAI/Old-chatgpt.com-o4-mini.md
   target_dir: raw0/system-prompts/OpenAI
   target_file: raw0/system-prompts/OpenAI/Old-chatgpt.com-o4-mini.md
+- source: raw0/system-prompts/OpenAI/Review.md
+  target_dir: raw0/system-prompts/OpenAI
+  target_file: raw0/system-prompts/OpenAI/Review.md
 - source: raw0/system-prompts/OpenAI/Rules.md
   target_dir: raw0/system-prompts/OpenAI
   target_file: raw0/system-prompts/OpenAI/Rules.md
@@ -1235,6 +1277,9 @@
 - source: raw0/system-prompts/Perplexity/Perplexity-Telegram-Bot.md
   target_dir: raw0/system-prompts/Perplexity
   target_file: raw0/system-prompts/Perplexity/Perplexity-Telegram-Bot.md
+- source: raw0/system-prompts/Perplexity/Review.md
+  target_dir: raw0/system-prompts/Perplexity
+  target_file: raw0/system-prompts/Perplexity/Review.md
 - source: raw0/system-prompts/Perplexity/Rules.md
   target_dir: raw0/system-prompts/Perplexity
   target_file: raw0/system-prompts/Perplexity/Rules.md
@@ -1310,6 +1355,9 @@
 - source: raw0/system-prompts/Proton/Lumo-20250727.md
   target_dir: raw0/system-prompts/Proton
   target_file: raw0/system-prompts/Proton/Lumo-20250727.md
+- source: raw0/system-prompts/Proton/Review.md
+  target_dir: raw0/system-prompts/Proton
+  target_file: raw0/system-prompts/Proton/Review.md
 - source: raw0/system-prompts/Proton/Tools.md
   target_dir: raw0/system-prompts/Proton
   target_file: raw0/system-prompts/Proton/Tools.md
@@ -1328,6 +1376,9 @@
 - source: raw0/system-prompts/Qoder/Expert.md
   target_dir: raw0/system-prompts/Qoder
   target_file: raw0/system-prompts/Qoder/Expert.md
+- source: raw0/system-prompts/Qoder/Review.md
+  target_dir: raw0/system-prompts/Qoder
+  target_file: raw0/system-prompts/Qoder/Review.md
 - source: raw0/system-prompts/Qoder/Rules.md
   target_dir: raw0/system-prompts/Qoder
   target_file: raw0/system-prompts/Qoder/Rules.md
@@ -1508,6 +1559,9 @@
 - source: raw0/system-prompts/Vscode/Expert.md
   target_dir: raw0/system-prompts/Vscode
   target_file: raw0/system-prompts/Vscode/Expert.md
+- source: raw0/system-prompts/Vscode/Review.md
+  target_dir: raw0/system-prompts/Vscode
+  target_file: raw0/system-prompts/Vscode/Review.md
 - source: raw0/system-prompts/Vscode/Tools-TodoList.md
   target_dir: raw0/system-prompts/Vscode
   target_file: raw0/system-prompts/Vscode/Tools-TodoList.md
@@ -1682,6 +1736,9 @@
 - source: raw0/system-prompts/xAI/Grok.md
   target_dir: raw0/system-prompts/xAI
   target_file: raw0/system-prompts/xAI/Grok.md
+- source: raw0/system-prompts/xAI/Review.md
+  target_dir: raw0/system-prompts/xAI
+  target_file: raw0/system-prompts/xAI/Review.md
 - source: raw0/system-prompts/xAI/Tools.md
   target_dir: raw0/system-prompts/xAI
   target_file: raw0/system-prompts/xAI/Tools.md
